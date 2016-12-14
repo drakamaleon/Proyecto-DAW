@@ -134,3 +134,9 @@ footer{
 	font-weight: bold;
 	font-style: italic; 
  }
+ #carousel-example-generic{
+ 	max-width: 80%;
+ 	height: 5%;
+ 	left: 10%;
+ 	object-position: center;
+ }
