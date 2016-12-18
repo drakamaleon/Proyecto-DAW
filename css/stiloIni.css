@@ -156,3 +156,18 @@ footer{
  div.modal-body,div.modal-footer{
  	background-color: #F6EED3;
  }
+ button.btn.btn-default.dropdown-toggle{
+ 	width: 100%;
+ }
+ .no-necesario hr{
+ 	border-top: #6CADA3;
+ 	margin-bottom: 10px;
+ }
+ ul.dropdown-menu.col-xs-12{
+ 	width: 90%;
+ 	margin-left: 45px;
+ }
+ ul.dropdown-menu li a{
+ 	background-color: #F1BD7F;
+ 	margin-bottom: 2px;
+ }
