@@ -7,3 +7,4 @@ $(document).on('show','.accordion', function (e) {
         $(this).find('.accordion-heading').not($(e.target)).removeClass('accordion-opened');
         //$('.accordion-heading i').toggleClass('fa-chevron-right fa-chevron-down');
     });
+
