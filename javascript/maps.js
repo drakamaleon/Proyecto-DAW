@@ -1,46 +1,31 @@
-function initMap(lati,long) {
-	
-        var uluru = {lat: parseFloat(lati), lng: parseFloat(long)};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 25,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-
 
 $(document).ready(function(){
-  $('#myModal').on('shown.bs.modal', function () {
-        initializeMap();
+  $('#myModal').on('shown.bs.modal', function (e) {
+        edificio={}
+        edificio.nombre= $(e.target).html();
+        edificio.lat="-2.1481404";
+        edificio.long="-79.9666825";
+        initializeMap(edificio.lat,edificio.long);
+        //initializeMap();
     });
-	/*$(".btn.btn-link").click(function(e){
-		edificio={}
-		edificio.nombre= $(e.target).html();
-		edificio.lat=-2.1481404;
-		edificio.long=-79.9666825;
-		initMap(edificio.lat,edificio.long);
-		$("#map").css({ height: "50vh"});*/
-
+	
 	});
 //}	
 
 //)
-;
+function initializeMap(lat,lon) {
 
-
-function initializeMap() {
+      var la= parseFloat(lat)
+      var long= parseFloat(lon)
         var mapOptions = {
-            center: new google.maps.LatLng(51.219987, 4.396237),
-            zoom: 12,
+            center: new google.maps.LatLng(la, long),
+            zoom: 17,
             mapTypeId: google.maps.MapTypeId.HYBRID
         };
         var map = new google.maps.Map(document.getElementById("map_canvas"),
           mapOptions);
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(51.219987, 4.396237)
+            position: new google.maps.LatLng(la, long)
         });
         marker.setMap(map);
     }
