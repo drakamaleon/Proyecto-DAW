@@ -79,3 +79,11 @@ div.icono{
 .modal-footer .btn-group:last-child > button {
 	border-right: 0;
 }
+
+div.panel{
+	background-color: white;
+}
+
+div.container{
+	background-color: white;
+}

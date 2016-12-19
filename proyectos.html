@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Fundamentos de Programación</title>
+	<title>Proyectos fundamentos de Programación</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/stiloIni.css">
@@ -35,15 +35,17 @@
 		          <div class="col-xs-12 col-sm-12 col-md-12">
 
 		            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		            <!--
+
 		              <div class="panel panel-default ">
-		                <div class="panel-heading cabeceraAcordeon" role="tab" id="headingOne">
+		                <div class="panel-heading cabeceraAcordeon" role="tab" id="heading1">
 		                  <h4 class="panel-title ">
-		                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
 		                      Titulo 1
 		                    </a>
 		                  </h4>
 		                </div>
-		                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+		                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
 		                  <div class="panel-body">
 			                  <div class="row">
 			                  	<div class="col-xs-12 col-sm-12 col-md-12">	
@@ -231,6 +233,7 @@
 		                  </div>
 		                </div>
 		              </div>
+		              -->
 		            </div>
 
 
@@ -264,11 +267,11 @@
 							<form>
 				              <div class="form-group">
 				                <label for="exampleInputEmail1">Titulo</label>
-				                <input type="text" class="form-control" id="titulo" placeholder="ingrese titulo">
+				                <input type="text" class="form-control" id="tituloModal" placeholder="ingrese titulo">
 				              </div>
 				              <div class="form-group">
 				                <label for="exampleInputPassword1">Descripción</label>
-				                <textarea class="form-control" rows="5" id="descripcion"></textarea>
+				                <textarea class="form-control" rows="5" id="descripcionModal"></textarea>
 				              </div>
 
 				              <div class="form-group">
@@ -281,12 +284,12 @@
 				              <div class="form-group">
 
 				                <label for="exampleInputPassword1">Eiquetas</label>
-				                <input type="text" class="form-control" id="etiquetas" placeholder="ingrese Etiquetas">
+				                <input type="text" class="form-control" id="etiquetasModal" placeholder="ingrese Etiquetas">
 				              </div>
 
 				              <div class="form-group">
 				                <label for="exampleInputFile">Archivo</label>
-				                <input type="file" id="exampleInputFile">
+				                <input type="file" id="inputFile">
 				                <p class="help-block">   Ingrese archivo </p>
 				              </div>
 				              <button type="submit" class="btn btn-default">Subir</button>
@@ -302,7 +305,7 @@
 									<button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Eliminar</button>
 								</div>
 								<div class="btn-group" role="group">
-									<button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save" role="button">Guardar</button>
+									<button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save"  onclick="lectorPanel();"  role="button">Guardar</button>
 								</div>
 							</div>
 						</div>
@@ -310,9 +313,16 @@
 				  </div>
 				</div>
 		     </div>
+
+
+
+
+
 		</div>
 
 	</div>
+
+
 
 
 
@@ -323,7 +333,43 @@
       crossorigin="anonymous"></script>
 
 
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="javascript/proyectos.js"></script>
+	<script type="text/javascript" src="javascript/proyectos2.js"></script>
 </body>
 </html>
+
+<!--
+
+/**
+						$("#accordion").append(
+							$("<div>", {"class": "panel panel-default "}).append(
+								$("<div>", {"class":"panel-heading cabeceraAcordeon ", "role": "tab" , "id": "heading" + i + ""}).append(
+									$("<h4>", {"class":"panel-title "}).append(
+										$("<a>", {"role": "button", "data-toggle": "collapse" , "data-parent": "#accordion", "href": "collapse"+ i + "", "aria-expanded": "true", "aria-controls": "collapse"+ i + "" }).append(
+											json[i].titulo)
+									)
+								)
+							)
+
+							.append(
+								$("<div>"), {"id": " collapse"+ i +""," class" :"panel-collapse collapse in ", "role": "tabpanel", "aria-labelledby":"heading"+i+"" }).append(
+									$("<div>", { "class": "panel-body"}).append(
+										$("<div>", {"class": "row"}).append(
+											$("<div>", {"class": "col-xs-12 col-sm-12 col-md-12"}).append(
+												$("<div>", {"class":"descripcion"}).append(
+													$("<p>", {"class", "acordeon"}).append("descripcion")
+													).append(
+													$("<p>", {"class": "acordeon-content"}).append(json[i].descripcion))
+												)
+											)
+										)
+									)
+
+						)
+*/
+
+
+-->
