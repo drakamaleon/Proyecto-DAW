@@ -13,6 +13,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="javascript/week.js"></script>
+
 	<style media="screen">
 		div.container{
 			background-color: #fff;
@@ -51,6 +52,9 @@
 			<section class="" id="profesores">
 				<h2>Profesores: </h2>
 			</section>
+			<section class="" id="ayudantes">
+				<h2>Ayudantes: </h2>
+			</section>
 		</div>
 	</div>
 
@@ -59,6 +63,29 @@
 	$.get('javascript/profesores.json', function (data) {
 
 		$.each(data, function(i, profesor) {
+			var cargo = profesor.cargo;
+			var $div = $('<div class="col-sm-6 col-md-4">');
+			var $thum = $('<div class="thumbnail">');
+			var $image = $('<img/>').attr("src",profesor.foto);
+			var $caption = $('<div class="caption"/>');
+			$caption.append($('<h3/>').text(profesor.nombre))
+					.append($('<h5/>').text(profesor.cargo))
+					.append($('<h5/>').text(profesor.mail))
+					.append($('<h5/>').text(profesor.telefono));
+			$thum.append($image, $caption);
+			$div.append($thum);
+			if (cargo.length > 1) {
+				$("#Coordinador").append($div);
+			} else {
+				$("#profesores").append($div);
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	$.get('javascript/AYUDANTES.json', function (data) {
+
+		$.each(data, function(i, ayudante) {
 			var cargo = profesor.cargo;
 			var $div = $('<div class="col-sm-6 col-md-4">');
 			var $thum = $('<div class="thumbnail">');
