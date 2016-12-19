@@ -1,10 +1,11 @@
 $(document).ready(function() {
 	if(jQuery.browser.mobile){
 
-		$("ul.nav.nav-tabs.col-lg-11 li").remove();
+		$("#menu .nav.nav-tabs.col-lg-11 li").remove();
+		$("div.btn.btn-defualt.dropdown-toggle").width(10);
 		var btn=document.createElement("button");
 		$(btn).addClass('btn');
-		$(btn).addClass('btn-default');
+		$(btn).addClass('btn-primary');
 		$(btn).addClass('dropdown-toggle');
 		$(btn).attr("data-toggle","dropdown");
 		$(btn).attr("aria-haspopup", "true");
@@ -12,8 +13,8 @@ $(document).ready(function() {
 		var immenu=document.createElement("img");
 		$(immenu).attr("src","images/menu.JPG");
 		$(btn).append(immenu);
-		$("header div#menu").prepend(btn);
-		$("ul.nav.nav-tabs.col-lg-11").addClass('dropdown-menu');
+		$("#menu").prepend(btn);
+		$("#menu ul.nav.nav-tabs.col-lg-11").addClass('dropdown-menu');
 		var li1=document.createElement("li");
 		var li2=document.createElement("li");
 		var li3=document.createElement("li");
@@ -45,11 +46,11 @@ $(document).ready(function() {
 		$(a5).attr("href","#");
 		$(li1).id="primario";
 		$(li1).addClass('active');
-		$("ul.nav.nav-tabs.col-lg-11").append(li1);
-		$("ul.nav.nav-tabs.col-lg-11").append(li2);
-		$("ul.nav.nav-tabs.col-lg-11").append(li3);
-		$("ul.nav.nav-tabs.col-lg-11").append(li4);
-		$("ul.nav.nav-tabs.col-lg-11").append(li5);
+		$("#menu ul.nav.nav-tabs.col-lg-11").append(li1);
+		$("#menu ul.nav.nav-tabs.col-lg-11").append(li2);
+		$("#menu ul.nav.nav-tabs.col-lg-11").append(li3);
+		$("#menu ul.nav.nav-tabs.col-lg-11").append(li4);
+		$("#menu ul.nav.nav-tabs.col-lg-11").append(li5);
 	}
 });
 
