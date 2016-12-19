@@ -239,7 +239,10 @@ function loadDataOnClick()
         //Change active state
         wizardButtons.removeClass('active');
         $(this).addClass('active');
-
+        /*desliza la imagen hasta donde se presenta el contenido */
+         $('html,body').animate({
+                scrollTop: $(".wizard-content").offset().top
+            }, 2000);   
 
         //Get "data-for" attribute and find element
         var dataFor = $(this).attr('data-for');
