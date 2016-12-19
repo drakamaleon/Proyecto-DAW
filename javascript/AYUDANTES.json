@@ -11,7 +11,8 @@
 		},
 		{
 			"dia": "Miercoles",
-			"aula": "24A-210",
+			"edificio": "24A",
+			"aula": "210",
 			"hora": "14:00-16:00"
 		},
 		{

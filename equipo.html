@@ -93,12 +93,12 @@
 			$caption.append($('<h3/>').text(ayudante.nombre))
 					.append($('<h5/>').text(ayudante.matricula))
 					.append($('<h5/>').text(ayudante.correo))
-					.append($('<h5/>').text(ayudante.telefono));
+					.append($('<h5/>').text(ayudante.horario));
 			var $caption2 = $('<div class="caption2"/>');
-			$caption2.append($('<h3/>').text(ayudante.nombre))
-					.append($('<h5/>').text(ayudante.matricula))
-					.append($('<h5/>').text(ayudante.correo))
-					.append($('<h5/>').text(ayudante.telefono));
+			$caption2.append($('<h3/>').text(ayudante.dia))
+					.append($('<h5/>').text(ayudante.edificio))
+					.append($('<h5/>').text(ayudante.aula))
+					.append($('<h5/>').text(ayudante.hora));
 			$thum.append($caption, $caption2);
 			$div.append($thum);
 			
