@@ -54,15 +54,15 @@ $(document).ready(function() {
 	}
 
 	$('#exampleModal').on('show.bs.modal', function (event) {
-		  var button = $(event.relatedTarget) // Button that triggered the modal
-		  var recipient = button.data('whatever') // Extract info from data-* attributes
-		  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-		  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		  var button = $(event.relatedTarget) 
+		  var recipient = button.data('whatever') 
+
 		  var modal = $(this)
 		  modal.find('.modal-header p').val(recipient)
 
 		})
-	$("#ingresoButton").on("click", validacion)
+
+	//$("#ingresoButton").on("click", validacion)
 });
 
 
@@ -70,6 +70,7 @@ function validacion(){
 	var tipo = $(".modal-header p").val()
 	var url = "data/data.json"
 	var xhttp = new XMLHttpRequest();
+	console.log("hola 1")
 	xhttp.onreadystatechange = function(){
 		if (xhttp.readyState ==4 && xhttp.status == 200){
 			var json = JSON.parse(xhttp.responseText) ;
@@ -82,6 +83,7 @@ function validacion(){
 			}else{
 				var contador = 0
 				for (i = 0; i<json.length ; i++){
+					console.log("estudiante")
 					contador= contador+1;
 					var correoJson = json[i].email
 					var passwordJson = json[i].password
