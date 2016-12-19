@@ -8,3 +8,6 @@ $(document).on('show','.accordion', function (e) {
         //$('.accordion-heading i').toggleClass('fa-chevron-right fa-chevron-down');
     });
 
+$(document).ready(function() {
+	console.log(document.location.href);
+});
