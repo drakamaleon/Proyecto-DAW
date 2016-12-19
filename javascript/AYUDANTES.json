@@ -6,7 +6,8 @@
 				"horarios": [
 					{
 						"dia": "Lunes",
-						"aula": "24A-210",
+						"edificio": "24A",
+						"aula": "210",
 						"hora": "14:00-16:00"
 					},
 					{
@@ -33,7 +34,8 @@
 				"horarios": [
 					{
 						"dia": "Martes",
-						"aula": "24A-103",
+						"edificio": "24A",
+						"aula": "202",
 						"hora": "13:30-17:30"
 					},
 					{
@@ -55,7 +57,8 @@
 				"horarios": [
 					{
 						"dia": "Lunes",
-						"aula": "24A-207",
+						"edificio": "24A",
+						"aula": "207",
 						"hora": "07:30-09:30"
 					},
 					{
@@ -77,12 +80,14 @@
 				"horarios": [
 					{
 						"dia": "Viernes",
-						"aula": "24A-210",
+						"edificio": "24A",
+						"aula": "210",
 						"hora": "07:30-10:30"
 					},
 					{
 						"dia": "Martes",
-						"aula": "24A-204",
+						"edificio": "24A",
+						"aula": "204",
 						"hora": "08:30-09:30"
 					},
 					{
@@ -99,12 +104,14 @@
 				"horarios": [
 					{
 						"dia": "Lunes",
-						"aula": "24A-103",
+						"edificio": "24A",
+						"aula": "103",
 						"hora": "11:30-13:30"
 					},
 					{
 						"dia": "Lunes",
-						"aula": "24A-103",
+						"edificio": "24A",
+						"aula": "103",
 						"hora": "07:30-09:30"
 					},
 					{
@@ -126,12 +133,14 @@
 				"horarios": [
 					{
 						"dia": "Martes",
-						"aula": "SP-01",
+						"edificio": "SP",
+						"aula": "01",
 						"hora": "09:30-11:30"
 					},
 					{
 						"dia": "Viernes",
-						"aula": "24A-204",
+						"edificio": "24A",
+						"aula": "204",
 						"hora": "11:30-14:30"
 					}				
 				]
@@ -143,12 +152,14 @@
 				"horarios": [
 					{
 						"dia": "Martes",
-						"aula": "24A-114",
+						"edificio": "24A",
+						"aula": "114",
 						"hora": "14:00-16:00"
 					},
 					{
 						"dia": "Jueves",
-						"aula": "24A-103",
+						"edificio": "24A",
+						"aula": "103",
 						"hora": "14:00-16:00"
 					},
 					{
@@ -165,7 +176,8 @@
 				"horarios": [
 					{
 						"dia": "Jueves",
-						"aula": "24A-201",
+						"edificio": "24A",
+						"aula": "201",
 						"hora": "07:30-09:30"
 					}				
 				]
