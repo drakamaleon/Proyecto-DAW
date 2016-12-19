@@ -32,7 +32,7 @@ function links(tipo) {
 		param ="?profesor"
 	}
 	var li = $(".row.nav.nav-tabs").children()
-	console.log(li)
+	
 	for (var i = 0; i < li.length; i++) {
 		lin = $(li[i]).children()
 		a= lin[0]

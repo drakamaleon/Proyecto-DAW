@@ -8,27 +8,27 @@ $(document).on('show','.accordion', function (e) {
         //$('.accordion-heading i').toggleClass('fa-chevron-right fa-chevron-down');
     });
 
-var ej =[{"titulo":"TITULO","autor":"AUTOR","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO","autor":"AUTOR","dificultad":"MEDIO","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO","autor":"AUTOR","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO","autor":"AUTOR","dificultad":"DIFICIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO","autor":"AUTOR","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"}
+var ejer =[{"titulo":"TITULO1","autor":"AUTOR","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
+		 {"titulo":"TITULO2","autor":"AUTOR","dificultad":"MEDIO","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
+		 {"titulo":"TITULO3","autor":"AUTOR","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
+		 {"titulo":"TITULO4","autor":"AUTOR","dificultad":"DIFICIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
+		 {"titulo":"TITULO5","autor":"AUTOR2","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"}
 		]
 
 $(document).ready(function() {
 	if(identificador()=="est"){
-		mostrarEjercicios(ej);
-		resolverEjercicio(ej[0]);
-
+		mostrarEjercicios(ejer);
+	}
+	if(identificador()=="prof"){
+		crearPestañas()
+		mostrarEjercicios(ejer,"prof")
+		var t1=$(".tabs a");
+		t1.click(function(event){
+			cambiarTab(event.target);
+		})
 	}
 
-
 });
-
-function mensajeAceptado() {
-	// funcion para crear un modal de mensaje aceptado
-}
-
 
 
 
@@ -187,52 +187,138 @@ function archivovalido(evento) {
 
 
 
+function extraerEjercicio(evento) {
+	boton = evento.target
+	indice = $(boton).attr("ejercicio")
+	ejercicio = ejer[indice]
+	$(".resolver").empty()
+	resolverEjercicio(ejercicio)
+
+}
+
+function cambiarTab(c){
+	var id=c.id;
+	$("#"+id).addClass("active");
+	console.log(id);
+	if(id=="1"){
+		$("#2").removeClass("active");
+		$("#3").removeClass("active");
+		agregarCont(id);
+	}else
+	if(id=="2"){
+		$("#1").removeClass("active");
+		$("#3").removeClass("active");
+		agregarCont(id);
+	}
+}
+
+function agregarCont(id){
+	$(".contenido").empty()
+	if(id==1){
+		mostrarEjercicios(ejer,"prof")
+		
+	}
+	else {
+		mostrarEjerciciosEditable("AUTOR",ejer)
+	}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function mostrarEjercicios(ejercicios) {
-	contenido = $(".content")
+function mostrarEjerciciosEditable(autor,ejercicios) {
+	contenido = $(".contenido")
 	$(contenido).empty()
 	$(contenido).append($(document.createElement("h1")).html("Ejercicios"))
 	for (var i = 0; i < ejercicios.length; i++) {
+		ejercicio = ejercicios[i];
+		if(ejercicio.autor==autor){
+			row = document.createElement("div")
+				$(row).addClass('row')
+				col1= document.createElement("div")
+					$(col1).addClass('col-lg-10 col-xs-9')
+					padre=document.createElement("div")
+						$(padre).addClass('panel-group')
+						idPadre="t"+i.toString()+"_parent"
+						$(padre).attr('id', 'value');
+						panelPrinc=document.createElement("div")
+							$(panelPrinc).addClass('panel panel-info')
+							panelHead = document.createElement("div")
+								$(panelHead).addClass('panel-heading')
+								idTar="#tab_t"+i.toString()
+								$(panelHead).attr({
+									"data-toggle": 'collapse',
+									"data-target": idTar
+								});
+								$(panelHead).css("cursor","pointer")
+								titu=document.createElement("h4")
+									$(titu).addClass('panel-title')
+									$(titu).html(ejercicio.titulo)
+								$(panelHead).append(titu)
+							panelBo = document.createElement("div")
+								$(panelBo).addClass('panel-collapse collapse')
+								idbody="tab_t"+i.toString()
+								$(panelBo).attr('id', idbody);
+								$(panelBo).html(ejercicio.breve)
+							panelPie=document.createElement("div")
+								$(panelPie).addClass('panel-footer')
+								etiquetas=ejercicio.etiquetas
+								et=document.createElement("ul")
+								for (var j = 0; j < etiquetas.length; j++) {
+									eti=document.createElement("li")
+										as=document.createElement("a")
+											$(as).addClass('btn btn-sm btn-default')
+												sp=document.createElement("span")
+													$(sp).addClass('glyphicon glyphicon-tag')
+													$(sp).html(etiquetas[j])
+												$(as).append(sp)
+										$(eti).append(as)
+									$(et).append(eti)
+								}
+								$(panelPie).append(et)
+							$(panelPrinc).append(panelHead)
+							$(panelPrinc).append(panelBo)
+							$(panelPrinc).append(panelPie)
+						$(padre).append(panelPrinc)
+					$(col1).append(padre)
+				col2 = document.createElement("div")
+					$(col2).addClass('col-lg-2 col-xs-3')
+						edt = document.createElement("div")
+							$(edt).addClass('col-lg-6')
+								asd= document.createElement("a")
+									$(asd).addClass('btn btn-block btn-lg btn-info')
+									spna = document.createElement("span")
+										$(spna).addClass('glyphicon glyphicon-edit')
+									$(asd).append(spna)
+								$(edt).append(asd)
+						eli = document.createElement("div")
+							$(eli).addClass('col-lg-6')
+								aisd= document.createElement("a")
+									$(aisd).addClass('btn btn-block btn-lg btn-info')
+									pna = document.createElement("span")
+										$(pna).addClass('glyphicon glyphicon-remove')
+									$(aisd).append(pna)
+								$(eli).append(aisd)
+						$(col2).append(edt)
+						$(col2).append(eli)
+				$(row).append(col1)
+				$(row).append(col2)
+			$(contenido).append(row)
+
+		}
+	}
+}
+
+
+function mostrarEjercicios(ejercicios,u) {
+	if(u=="prof"){
+		contenido = $(".contenido")
+	}else {
+		contenido = $(".content")	
+	}
+	//console.log(ejercicios)
+	$(contenido).empty()
+	$(contenido).append($(document.createElement("h1")).html("Ejercicios"))
+	for (var i = 0; i < ejercicios.length; i++) {
+
 		ejercicio = ejercicios[i];
 		if(i%2==0){
 			row = document.createElement("div");
@@ -291,8 +377,13 @@ function mostrarEjercicios(ejercicios) {
 														bt=document.createElement("a")
 															$(bt).addClass('btn btn-sm btn-primary')
 															$(bt).attr({
+																"ejercicio": i.toString(),
 																"data-toggle": 'modal',
 																"data-target": '#myModal'
+															});
+
+															$(bt).click(function(event) {
+																extraerEjercicio(event);
 															});
 															$(bt).html("ABRIR")
 															icono=document.createElement("span")
@@ -357,3 +448,35 @@ function mostrarEjercicios(ejercicios) {
 		}
 	}	
 }
+
+
+
+
+
+function crearPestañas () {
+	content = $(".content")
+		tab = document.createElement("div");
+			$(tab).addClass('tabs')
+		    ej = document.createElement("a")
+		    	$(ej).attr('href', '#');
+		    	spaEj = document.createElement("span")
+		    		$(spaEj).html("Ejercicios")
+		    		$(spaEj).addClass('active')
+		    		$(spaEj).attr('id','1')
+		    	$(ej).append(spaEj)
+		    edit = document.createElement("a")
+		    	$(edit).attr('href', '#');
+		    	spaEd = document.createElement("span")
+		    		$(spaEd).html("Mis  ejercicios")
+		    		$(spaEd).attr('id','2')
+		    	$(edit).append(spaEd)
+		    $(tab).append(ej)
+		    $(tab).append(edit)
+		contenido = document.createElement("div")
+			$(contenido).addClass('contenido')
+		$(content).append(tab)
+		$(content).append(contenido)
+}
+
+
+
