@@ -4,10 +4,12 @@ $(document).ready(function(){
 		case 'est':{
 			$("li.nove").css("display","inline-block");
 			$("li#soloprof").css("display","none");
+			$("a#cya").html()="Cerrar Sesión";
 			break;
 		}
 		case 'prof':{
 			$("li.nove").css("display","inline-block");
+			$("a#cya").html('Cerrar Sesión');
 			break;
 		}
 		default:
