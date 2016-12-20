@@ -2381,4 +2381,7 @@ button #politicas,button #syllabus{
 #ulogin,#clogin{
 	width: 100%;
 }
+li.nove{
+	display: none;
+}
 /*# sourceMappingURL=main.css.map */
