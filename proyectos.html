@@ -1,351 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<title>Proyectos fundamentos de Programación</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/stiloIni.css">
-	<link rel="stylesheet" type="text/css" href="css/stiloProyectos.css">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Lhander</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-	<script type="text/javascript" src="floaty-master/floaty.js"></script>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="floaty-master/floaty.css">
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css"> 
+   <link rel="stylesheet" href="css/proyectos.css"> 
+   <link rel="stylesheet" type="text/css" href="floaty-master/floaty.css">   
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
 </head>
+
 <body>
-	<div class="container">
-		<div class="row">
-			<header class="col-lg-12 col-xs-12">
-				<div class="row">
-					<img class="col-lg-2" src="images/logo temporal.jpg" alt="logo here">
-					<h2 class="col-lg-5"><br>Curso en línea de <br>Fundamentos de Programación</h2>
-				</div>
-				<ul class="row nav nav-tabs">
-					<li class="col-lg-2 col-xs-12 active" id="primario"><a href="index.html">Inicio</a></li>
-					<li class="col-lg-2 col-xs-12"><a href="curso.html">El Curso</a></li>
-					<li class="col-lg-2 col-xs-12"><a href="#">Semana a semana</a></li>
-					<li class="col-lg-2 col-xs-12"><a href="#">Equipo</a></li>
-					<li class="col-lg-2 col-xs-12"><a href="#">Ayudantías</a></li>
-				</ul>		
-			</header>
-		</div>
-		<div>
-			<div id="collapse">
-		        <div class="row">
-		          <div class="col-xs-12 col-sm-12 col-md-12">
+   <header class="sticky">
 
-		            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-		            <!--
+      <div class="row">
 
-		              <div class="panel panel-default ">
-		                <div class="panel-heading cabeceraAcordeon" role="tab" id="heading1">
-		                  <h4 class="panel-title ">
-		                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-		                      Titulo 1
-		                    </a>
-		                  </h4>
-		                </div>
-		                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
-		                  <div class="panel-body">
-			                  <div class="row">
-			                  	<div class="col-xs-12 col-sm-12 col-md-12">	
-			                  		<div class="descripcion">
-			                  			<p class="acordeon-title"> <b> Descripcion</b></p> 
-			                  			<p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
+         <div class="logo">
+            <a href="index.html">Lhander</a>
+         </div>
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="fecha">
-			                  			<p class="acordeon-title"> <b> Fecha</b></p> 
-			                  			<p class="acordeon-content">
-			                  				<form>
-			                  					<input type="date" name="nacimiento" />
-			                  				</form>
-			                  			 </p>
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="etiquetas">
-			                  			<p class="acordeon-title"> <b> Etiquetas</b></p> 
-			                  			<p class="acordeon-content"> #hola #comoAndas </p>
+         <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+               <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+               <li><a class="smoothscroll"  href="#process" title="">Process</a></li>
+               <li><a class="smoothscroll"  href="#features" title="">Features</a></li>
+               <li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
+               <li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>             
+               <li class="highlight with-sep"><a href="#" title="">Sign Up</a></li>             
+            </ul>
+         </nav>
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="archivos">
-			                  			<p class="acordeon-title"> <b> Archivos</b></p> 
-			                  			<a href="#">proyectoA</a> 
-			                  			
-			                  		</div>
+         <a class="menu-toggle" href="#"><span>Menu</span></a>
+         
+      </div>      
+      
+   </header> 
 
-			                  		
-			                  	</div>
-			                  </div>
+   <section id="process"> 
+      <div>
+         <div id="collapse">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
 
-		                  </div>
-		                </div>
-		              </div>
-		              <div class="panel panel-default">
-		                <div class="panel-heading " role="tab" id="headingTwo">
-		                  <h4 class="panel-title">
-		                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		                       Titulo 2
-		                    </a>
-		                  </h4>
-		                </div>
-		                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		                  <div class="panel-body">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-		                  	<div class="row">
-			                  	<div class="col-xs-12 col-sm-12 col-md-12">	
-			                  		<div class="descripcion">
-			                  			<p class="acordeon-title"> <b> Descripcion</b></p> 
-			                  			<p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
+<!--
+                    <div class="panel panel-default ">
+                      <div class="panel-heading cabeceraAcordeon" role="tab" id="heading1">
+                        <h4 class="panel-title ">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Titulo 1
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12">  
+                                 <div class="descripcion">
+                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
+                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="fecha">
-			                  			<p class="acordeon-title"> <b> Fecha</b></p> 
-			                  			<p class="acordeon-content">
-			                  				<form>
-			                  					<input type="date" name="nacimiento" />
-			                  				</form>
-			                  			 </p>
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="etiquetas">
-			                  			<p class="acordeon-title"> <b> Etiquetas</b></p> 
-			                  			<p class="acordeon-content"> #hola #comoAndas </p>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="fecha">
+                                    <p class="acordeon-title"> <b> Fecha</b></p> 
+                                    <p class="acordeon-content">
+                                       <form>
+                                          <input type="date" name="nacimiento" />
+                                       </form>
+                                     </p>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="etiquetas">
+                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
+                                    <p class="acordeon-content"> #hola #comoAndas </p>
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="archivos">
-			                  			<p class="acordeon-title"> <b> Archivos</b></p> 
-			                  			<a href="#">proyectoA</a> 
-			                  			
-			                  		</div>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="archivos">
+                                    <p class="acordeon-title"> <b> Archivos</b></p> 
+                                    <a href="#">proyectoA</a> 
+                                    
+                                 </div>
 
-			                  		
-			                  	</div>
-			                  </div>
-		                  </div>
-		                </div>
-		              </div>
-		              <div class="panel panel-default">
-		                <div class="panel-heading" role="tab" id="headingThree">
-		                  <h4 class="panel-title">
-		                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		                      Titulo 3
-		                    </a>
-		                  </h4>
-		                </div>
-		                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-		                  <div class="panel-body">
-		                  	<div class="row">
-			                  	<div class="col-xs-12 col-sm-12 col-md-12">	
-			                  		<div class="descripcion">
-			                  			<p class="acordeon-title"> <b> Descripcion</b></p> 
-			                  			<p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
+                                 
+                              </div>
+                           </div>
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="fecha">
-			                  			<p class="acordeon-title"> <b> Fecha</b></p> 
-			                  			<p class="acordeon-content">
-			                  				<form>
-			                  					<input type="date" name="nacimiento" />
-			                  				</form>
-			                  			 </p>
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="etiquetas">
-			                  			<p class="acordeon-title"> <b> Etiquetas</b></p> 
-			                  			<p class="acordeon-content"> #hola #comoAndas </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading " role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                             Titulo 2
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="archivos">
-			                  			<p class="acordeon-title"> <b> Archivos</b></p> 
-			                  			<a href="#">proyectoA</a> 
-			                  			
-			                  		</div>
+                           <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12">  
+                                 <div class="descripcion">
+                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
+                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
 
-			                  		
-			                  	</div>
-			                  </div>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="fecha">
+                                    <p class="acordeon-title"> <b> Fecha</b></p> 
+                                    <p class="acordeon-content">
+                                       <form>
+                                          <input type="date" name="nacimiento" />
+                                       </form>
+                                     </p>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="etiquetas">
+                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
+                                    <p class="acordeon-content"> #hola #comoAndas </p>
 
-		                  </div>
-		                </div>
-		              </div>
-		              <div class="panel panel-default">
-		                <div class="panel-heading" role="tab" id="headingFour">
-		                  <h4 class="panel-title">
-		                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-		                     Titulo 4
-		                    </a>
-		                  </h4>
-		                </div>
-		                <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
-		                  <div class="panel-body">
-		                  	<div class="row">
-			                  	<div class="col-xs-12 col-sm-12 col-md-12">	
-			                  		<div class="descripcion">
-			                  			<p class="acordeon-title"> <b> Descripcion</b></p> 
-			                  			<p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="archivos">
+                                    <p class="acordeon-title"> <b> Archivos</b></p> 
+                                    <a href="#">proyectoA</a> 
+                                    
+                                 </div>
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="fecha">
-			                  			<p class="acordeon-title"> <b> Fecha</b></p> 
-			                  			<p class="acordeon-content">
-			                  				<form>
-			                  					<input type="date" name="nacimiento" />
-			                  				</form>
-			                  			 </p>
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="etiquetas">
-			                  			<p class="acordeon-title"> <b> Etiquetas</b></p> 
-			                  			<p class="acordeon-content"> #hola #comoAndas </p>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Titulo 3
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12">  
+                                 <div class="descripcion">
+                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
+                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
 
-			                  			
-			                  		</div>
-			                  		<hr>
-			                  		<div class="archivos">
-			                  			<p class="acordeon-title"> <b> Archivos</b></p> 
-			                  			<a href="#">proyectoA</a> 
-			                  			
-			                  		</div>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="fecha">
+                                    <p class="acordeon-title"> <b> Fecha</b></p> 
+                                    <p class="acordeon-content">
+                                       <form>
+                                          <input type="date" name="nacimiento" />
+                                       </form>
+                                     </p>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="etiquetas">
+                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
+                                    <p class="acordeon-content"> #hola #comoAndas </p>
 
-			                  		
-			                  	</div>
-			                  </div>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="archivos">
+                                    <p class="acordeon-title"> <b> Archivos</b></p> 
+                                    <a href="#">proyectoA</a> 
+                                    
+                                 </div>
 
-		                  </div>
-		                </div>
-		              </div>
-		              -->
-		            </div>
+                                 
+                              </div>
+                           </div>
 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           Titulo 4
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                           <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12">  
+                                 <div class="descripcion">
+                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
+                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
 
-		            
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="fecha">
+                                    <p class="acordeon-title"> <b> Fecha</b></p> 
+                                    <p class="acordeon-content">
+                                       <form>
+                                          <input type="date" name="nacimiento" />
+                                       </form>
+                                     </p>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="etiquetas">
+                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
+                                    <p class="acordeon-content"> #hola #comoAndas </p>
 
-		          </div>
+                                    
+                                 </div>
+                                 <hr>
+                                 <div class="archivos">
+                                    <p class="acordeon-title"> <b> Archivos</b></p> 
+                                    <a href="#">proyectoA</a> 
+                                    
+                                 </div>                             
+                              </div>
+                           </div>
 
-		        </div>
-		     </div>
-		     <div class="icono">
-		     	<form>
-		     		<button type="button" class="btn btn-default btn-lg " data-toggle="modal" data-target="#myModal">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nuevo
-					</button>
-		     	</form>
-		     </div>
+                        </div>
+                      </div>
+                    </div>
+-->
+                  </div>
+                </div>
 
-		     <div>
-		     	<!-- Modal -->
-		     	<!-- line modal -->
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-							<h2 class="modal-title" id="lineModalLabel">Nuevo proyecto</h2>
-						</div>
-						<div class="modal-body">
-							
-				            <!-- content goes here -->
-							<form>
-				              <div class="form-group">
-				                <label for="exampleInputEmail1">Titulo</label>
-				                <input type="text" class="form-control" id="tituloModal" placeholder="ingrese titulo">
-				              </div>
-				              <div class="form-group">
-				                <label for="exampleInputPassword1">Descripción</label>
-				                <textarea class="form-control" rows="5" id="descripcionModal"></textarea>
-				              </div>
+              </div>
+           </div>
 
-				              <div class="form-group">
-				                <label for="exampleInputPassword1">Fecha de entrega</label>
-				                <input type="date" class="form-control" id="fechaModal" >
-				              </div>
+           <div class="icono">
+            <form>
+               <button type="button" class="btn btn-default btn-lg " data-toggle="modal" data-target="#myModal">
+                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nuevo
+               </button>
+            </form>
+           </div>
 
+           <div class="floaty">
+             <form>
+               <button type="button" class="btn btn-floaty btn-lg btn-circle " data-toggle="modal" data-target="#myModal">
+                 <i class="glyphicon glyphicon-plus"></i> 
+               </button>
+            </form>
+           </div>
 
+           <div>
+            <!-- Modal -->
+            <!-- line modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                     <h2 class="modal-title" id="lineModalLabel">Nuevo proyecto</h2>
+                  </div>
+                  <div class="modal-body">
+                     
+                        <!-- content goes here -->
+                     <form>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="tituloModal" placeholder="ingrese titulo">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Descripción</label>
+                            <textarea class="form-control" rows="5" id="descripcionModal"></textarea>
+                          </div>
 
-				              <div class="form-group">
-
-				                <label for="exampleInputPassword1">Eiquetas</label>
-				                <input type="text" class="form-control" id="etiquetasModal" placeholder="ingrese Etiquetas">
-				              </div>
-
-				              <div class="form-group">
-				                <label for="exampleInputFile">Archivo</label>
-				                <input type="file" id="inputFile">
-				                <p class="help-block">   Ingrese archivo </p>
-				              </div>
-				              <button type="submit" class="btn btn-default">Subir</button>
-				            </form>
-
-						</div>
-						<div class="modal-footer">
-							<div class="btn-group btn-group-justified" role="group" aria-label="group button">
-								<div class="btn-group" role="group">
-									<button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Cerrar</button>
-								</div>
-								<div class="btn-group btn-delete hidden" role="group">
-									<button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Eliminar</button>
-								</div>
-								<div class="btn-group" role="group">
-									<button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save"  onclick="lectorPanel();"  role="button">Guardar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				  </div>
-				</div>
-		     </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Fecha de entrega</label>
+                            <input type="date" class="form-control" id="fechaModal" >
+                          </div>
 
 
 
+                          <div class="form-group">
 
+                            <label for="exampleInputPassword1">Eiquetas</label>
+                            <input type="text" class="form-control" id="etiquetasModal" placeholder="ingrese Etiquetas">
+                          </div>
 
-		</div>
-		<div class="row">
-				<div class="col-lg-12 col-xs-12"><hr></div>
-				<div class="col-lg-1"></div>
-				<div class="col-lg-7">
-					<footer class="col-lg-12 col-xs-12">&copy; Espol &mdash; <label>Todos los derechos reservados</label></footer>
-				</div>
-				<div class="col-lg-4"></div>
-		</div>
+                          <div class="form-group">
+                            <label for="exampleInputFile">Archivo</label>
+                            <input type="file" id="inputFile">
+                            <p class="help-block">   Ingrese archivo </p>
+                          </div>
+                        </form>
 
-	</div>
+                  </div>
+                  <div class="modal-footer">
+                     <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                        <div class="btn-group" role="group">
+                           <button type="button" class="btn btn-modal" data-dismiss="modal"  role="button">Cerrar</button>
+                        </div>
+                        <div class="btn-group btn-delete hidden" role="group">
+                           <button type="button" id="delImage" class="btn btn-modal btn-hover-red" data-dismiss="modal"  role="button">Eliminar</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                           <button type="button" id="saveImage" class="btn btn-modal btn-hover-green" data-action="save"  onclick="lectorPanel();"  role="button">Guardar</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+              </div>
+            </div>
+           </div>
+      </div> 
+   </section> <!-- /process-->  
+   <footer>
+      <div class="footer-bottom">
 
+         <div class="row">
 
+            <div class="col-twelve">
+               <div class="copyright">
+                  <span>© Copyright Lhander 2016.</span> 
+                  <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>                
+               </div>
 
+               <div id="go-top" style="display: block;">
+                  <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+               </div>         
+            </div>
 
+         </div>     
 
+      </div>
+   
+   </footer>
 
-	<script
+      <!-- Java Script
+   ================================================== --> 
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script
       src="https://code.jquery.com/jquery-3.1.1.js"
       integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
       crossorigin="anonymous"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/proyectos.js"></script>
+   <script src="floaty-master/floaty.js"></script>
+   <script src="js/proyectosIniciador.js"></script>
+   <script src="js/proyectos2.js"></script>
 
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="javascript/proyectos.js"></script>
-	<script type="text/javascript" src="javascript/proyectos2.js"></script>
 </body>
 </html>
-

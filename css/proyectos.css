@@ -1,0 +1,91 @@
+
+.panel{
+	margin-bottom: 5px;
+}
+
+.panel-default > .panel-heading{
+	font-weight: normal;
+	background-color: #048a7c;
+	color: white;
+	font-size: 1em;
+
+}
+
+#accordion{
+	margin: 10px;
+}
+
+.acordeon-title{
+	font-weight: bold;
+ 	font-size: 2em;
+ 	font-family: sans-serif;
+
+
+}
+
+.acordeon-content{
+	font-family: sans-serif;
+	font-style: italic;
+
+}
+
+.archivos a:hover{
+	color: #555555;
+}
+
+div.floaty {
+  top: 50%; /* Starting y position */
+  left: 0; /* Starting x position */
+}
+
+.btn-circle {
+  width: 80px;
+  height: 80px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+div.icono{
+	position: fixed;
+    top: 50%;
+    right: 8%;
+    width: 8%;
+    height: 10%;
+}
+
+.btn-floaty{
+	color: white;
+	background-color: black;
+}
+
+.btn-modal{
+	color: white;
+	background-color: #05bca9;
+
+}
+
+.center {
+    margin-top:50px;   
+}
+
+.modal-header {
+	padding-bottom: 5px;
+}
+
+.modal-footer {
+    	padding: 0;
+	}
+    
+.modal-footer .btn-group button {
+	height:40px;
+	border-top-left-radius : 0;
+	border-top-right-radius : 0;
+	border: none;
+	border-right: 1px solid #ddd;
+}
+	
+.modal-footer .btn-group:last-child > button {
+	border-right: 0;
+}
