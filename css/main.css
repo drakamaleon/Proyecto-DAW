@@ -2369,8 +2369,16 @@ footer ul li {
 	color: #FFFFFF;
 }
 
-#modal1 div div embed,#modal1 div div embed{
-	clear: both;
+button #politicas,button #syllabus{
+	color: black;
 }
 
+#login{
+	padding: 50px;
+	text-align: center;
+}
+
+#ulogin,#clogin{
+	width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
