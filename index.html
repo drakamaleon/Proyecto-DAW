@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Lhander</title>
+	<title>Fundamentos de Programación-Espol</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -40,19 +40,24 @@
    	<div class="row">
 
    		<div class="logo">
-	         <a href="index.html">Lhander</a>
+	         <a href="index.html">Fundamentos de Programación</a>
 	      </div>
 
-	   	<nav id="main-nav-wrap">
-				<ul class="main-navigation">
-					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-					<li><a class="smoothscroll"  href="#process" title="">Process</a></li>
-					<li><a class="smoothscroll"  href="#features" title="">Features</a></li>
-					<li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
-					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
-					<li class="highlight with-sep"><a href="#" title="">Sign Up</a></li>					
-				</ul>
-			</nav>
+         <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+               <li class="current"><a class="smoothscroll"  href="#intro" title="">Inicio</a></li>
+               <li><a class="smoothscroll"  href="#process" title="">El Curso</a></li>
+               <li><a class="smoothscroll"  href="#features" title="">Semana a semana</a></li>
+               <li><a class="smoothscroll"  href="#faq" title="">Equipo</a></li>
+               <li><a class="smoothscroll"  href="#pricing" title="">Ayudantías</a></li>
+               <li class="with-sep nove"><a href="#" title="">SANDBOX</a></li>
+               <li class="nove" id="soloprof"><a class="smoothscroll"  href="#" title="">Proyectos</a></li>
+               <li class="with-sep nove"><a href="#" title="">Perfil</a></li>          
+               <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="#login-popup" title="">Iniciar Sesión</a></div></li>
+               <li class="highlight"><a id="cerrar" href="" title="">Cerrar Sesión</a></li>
+
+            </ul>
+         </nav>
 
 			<a class="menu-toggle" href="#"><span>Menu</span></a>
    		
@@ -75,10 +80,10 @@
 	   				<a href="#video-popup"><img src="images/play-button.png" alt=""></a>
 	   			</div>
 
-	   			<h5>Hello welcome to lhander.</h5>
-	   			<h1>Our awesome app will make your life a lot easier.</h1>
+	   			<h5>Bienvenido al curso de Fundamentos de Programación</h5>
+	   			<h1>Donde aprenderás a razonar para programar</h1>
 
-	   			<a class="button stroke smoothscroll" href="#process" title="">Learn More</a>
+	   			<a class="button stroke smoothscroll" href="#process" title="">Conoce más</a>
 
 	   		</div>  
    			
@@ -91,12 +96,47 @@
       <div id="video-popup" class="popup-modal mfp-hide">
 
 		   <div class="fluid-video-wrapper">
-            <iframe src="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=faec09" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+            <iframe src="https://www.youtube.com/embed/jTsOQdCrAis" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
          </div>		     
 
-         <a class="close-popup">Close</a>         
+         <a class="close-popup">Cerrar</a>         
 
-	   </div> <!-- /video-popup -->  	 	
+	   </div> <!-- /video-popup -->
+
+       <div id="pdfpol-popup" class="popup-modal mfp-hide">
+
+         <div class="fluid-video-wrapper">
+            <iframe src="data/Politicas.pdf" width="100%" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+         </div>           
+
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup --> 
+
+      <div id="pdfsyll-popup" class="popup-modal mfp-hide">
+
+         <div class="fluid-video-wrapper">
+            <iframe src="data/Syllabus.pdf" width="100%" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+         </div>           
+
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup -->
+
+      <div id="login-popup" class="popup-modal mfp-hide">
+
+         
+         <div class="fluid-video-wrapper" id="log">
+               <form id="login" class="group" width="300" height="201">
+                  <p>Usuario:</p><input id="ulogin" type="text" placeholder="Ingrese su correo Espol completo" >
+                  <p>Contraseña:</p><input id="clogin" type="password" placeholder="Ingrese su contraseña" >
+                  <button onclick="login();"><input type="submit" value="Ingresar"></button>
+               </form>
+         </div>           
+
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup -->       	 	
 
    </section> <!-- /intro -->
 
@@ -108,10 +148,10 @@
    	<div class="row section-intro">
    		<div class="col-twelve with-bottom-line">
 
-   			<h5>Process</h5>
-   			<h1>How it works?</h1>
+   			<h5>El curso</h5>
+   			<h1>¿Qué comprende?</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">Aquí te dejamos la información necesaria del curso</p>
 
    		</div>   		
    	</div>
@@ -122,41 +162,44 @@
 
    			<div class="item" data-item="1">
 
-   				<h5>Sign Up</h5>
+   				<h5>Descripción</h5>
 
-   				<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
+   				<p>El curso presenta a los estudiantes estrategias para resolver problemas comunes en diversas profesiones por medio del diseño e implementación de soluciones basadas en el uso de un lenguaje de programación. Cubre los principios básicos para que el estudiante pueda leer y escribir programas; haciendo énfasis en el diseño y análisis de algoritmos. Además, introduce a los estudiantes en el uso de herramientas de desarrollo y depuración.</p>
    					
    			</div>
 
    			<div class="item" data-item="2">
 
-	   			<h5>Upload</h5>
+	   			<h5>Syllabus</h5>
 
-	   			<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
-   					
+               <div class='video-link'>
+	   			  <a type="button" class="btn btn-primary" id="syllabus" href="#pdfsyll-popup"><button>Ver Syllabus</button></a>
+   				</div>
    			</div>
    				
    		</div> <!-- /left-side -->
-   		
+
    		<div class="right-side">
    				
    			<div class="item" data-item="3">
 
-   				<h5>Create</h5>
+   				<h5>Requisitos</h5>
 
-   				<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
+   				<p><h6>Pre-Requisitos:</h6>Herramientas de Colaboración Digital<br><br><h6>Co-Requisitos:</h6>Ninguno<br><br><h6>Nivel mínimo de estudios:</h6> No aplica<br><br><br><br><br></p>
    					
    			</div>
 
    			<div class="item" data-item="4">
 
-   				<h5>Publish</h5>
+   				<h5>Políticas</h5>
 
-   				<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
+               <div class='video-link'>
+   				  <a type="button" class="btn btn-primary" id="politicas" href="#pdfpol-popup"><button>Ver Políticas</button></a>
+               </div>
    					
    			</div>
 
-   		</div> <!-- /right-side -->  
+   		</div> <!-- /right-side -->
 
    		<div class="image-part"></div>  			
 
@@ -280,152 +323,6 @@
 	</section> <!-- /features -->
 	
 
-	<!-- pricing
-   ================================================== -->
-
-   <section id="pricing">
-
-   	<div class="row section-intro">
-   		<div class="col-twelve with-bottom-line">
-
-   			<h5>Our Pricing</h5>
-   			<h1>Pick the best plan for you.</h1>
-
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
-   		</div>   		
-   	</div>
-
-   	<div class="row pricing-content">
-
-         <div class="pricing-tables block-1-4 group">
-
-            <div class="bgrid"> 
-
-            	<div class="price-block">
-
-            		<div class="top-part">
-
-	            		<h3 class="plan-title">Starter</h3>
-		               <p class="plan-price"><sup>$</sup>4.99</p>
-		               <p class="price-month">Per month</p>
-		               <p class="price-meta">Billed Annually.</p>
-
-	            	</div>                
-
-	               <div class="bottom-part">
-
-	            		<ul class="features">
-		                  <li><strong>3GB</strong> Storage</li>
-		                  <li><strong>10GB</strong> Bandwidth</li>		                  
-		                  <li><strong>5</strong> Databases</li>		                  
-		                  <li><strong>30</strong> Email Accounts</li>
-		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
-
-	            	</div>
-
-            	</div>           	
-                        
-			   </div> <!-- /price-block -->
-
-            <div class="bgrid">
-
-            	<div class="price-block primary">
-
-            		<div class="top-part" data-info="recommended">
-
-	            		<h3 class="plan-title">Standard</h3>
-		               <p class="plan-price"><sup>$</sup>9.99</p>
-		               <p class="price-month">Per month</p>
-							<p class="price-meta">Billed Annually.</p>
-
-	            	</div>               
-
-	               <div class="bottom-part">
-
-	            		<ul class="features">
-		                  <li><strong>5GB</strong> Storage</li>
-		                  <li><strong>15GB</strong> Bandwidth</li>		                  
-		                  <li><strong>7</strong> Databases</li>		                  
-		                  <li><strong>40</strong> Email Accounts</li>
-		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
-
-	            	</div>
-            		
-            	</div>            	                 
-
-			  </div> <!-- /price-block -->
-
-           <div class="bgrid">               
-
-               <div class="price-block">
-
-            		<div class="top-part">
-
-	            		<h3 class="plan-title">Premium</h3>
-		               <p class="plan-price"><sup>$</sup>19.99</p>
-		               <p class="price-month">Per month</p>
-		                <p class="price-meta">Billed Annually.</p>		               
-
-	            	</div> 
-	            	
-						<div class="bottom-part">
-
-	            		<ul class="features">
-		                  <li><strong>10GB</strong> Storage</li>
-		                  <li><strong>30GB</strong> Bandwidth</li>		                  
-		                  <li><strong>15</strong> Databases</li>		                  
-		                  <li><strong>60</strong> Email Accounts</li>
-		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
-
-	            	</div>	            		                
-            		
-            	</div>                              
-
-			   </div> <!-- /price-block --> 
-
-			   <div class="bgrid">               
-
-               <div class="price-block">
-
-            		<div class="top-part">
-
-	            		<h3 class="plan-title">Ultimate</h3>
-		               <p class="plan-price"><sup>$</sup>29.99</p>
-		               <p class="price-month">Per month</p>
-		               <p class="price-meta">Billed Annually.</p>		               
-
-	            	</div> 
-	            	
-						<div class="bottom-part">
-
-	            		<ul class="features">
-		                  <li><strong>20GB</strong> Storage</li>
-		                  <li><strong>40GB</strong> Bandwidth</li>		                  
-		                  <li><strong>25</strong> Databases</li>		                  
-		                  <li><strong>100</strong> Email Accounts</li>
-		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
-
-	            	</div>	            		                
-            		
-            	</div>                              
-
-			   </div> <!-- /price-block -->           
-
-         </div> <!-- /pricing-tables --> 
-
-      </div> <!-- /pricing-content --> 
-
-   </section> <!-- /pricing --> 
-
 
    <!-- Testimonials Section
    ================================================== -->
@@ -484,6 +381,168 @@
       </div> <!-- /flex-container -->
 
    </section> <!-- /testimonials -->
+
+
+   <!-- pricing
+   ================================================== -->
+
+   <section id="pricing">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h5>Ayudantías</h5>
+            <h1>Los mejores que podrás encontrar.</h1>
+
+            <p class="lead">La Espol ofrece un servicio de ayudantías, con los mejores ayudantes. Ellos te guiarán en tu caminar por el .</p>
+
+         </div>         
+      </div>
+
+      <div class="row pricing-content">
+
+         <div class="pricing-tables block-1-4 group">
+
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title">Ayudante</h3>
+                     <p class="plan-price">Annie Santacruz</p>
+                     <p class="price-month">correo@espol.edu.ec</p>
+                     <!-- <p class="price-meta">Billed Annually.</p> -->
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <a class="button large" href="">Ver Horario</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title">Ayudante</h3>
+                     <p class="plan-price">Annie Santacruz</p>
+                     <p class="price-month">correo@espol.edu.ec</p>
+                     <!-- <p class="price-meta">Billed Annually.</p> -->
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <a class="button large" href="">Ver Horario</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title">Ayudante</h3>
+                     <p class="plan-price">Annie Santacruz</p>
+                     <p class="price-month">correo@espol.edu.ec</p>
+                     <!-- <p class="price-meta">Billed Annually.</p> -->
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <a class="button large" href="">Ver Horario</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title">Ayudante</h3>
+                     <p class="plan-price">Annie Santacruz</p>
+                     <p class="price-month">correo@espol.edu.ec</p>
+                     <!-- <p class="price-meta">Billed Annually.</p> -->
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <a class="button large" href="">Ver Horario</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title">Ayudante</h3>
+                     <p class="plan-price">Annie Santacruz</p>
+                     <p class="price-month">correo@espol.edu.ec</p>
+                     <!-- <p class="price-meta">Billed Annually.</p> -->
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <a class="button large" href="">Ver Horario</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title">Ayudante</h3>
+                     <p class="plan-price">Annie Santacruz</p>
+                     <p class="price-month">correo@espol.edu.ec</p>
+                     <!-- <p class="price-meta">Billed Annually.</p> -->
+
+                  </div>                
+
+                  <div class="bottom-part">
+                  <img src="images/avatars/avatar-1.jpg">
+                     <a class="button large" href="">Ver Horario</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /pricing --> 
 
 
    <!-- faq
@@ -721,10 +780,13 @@
 
    <!-- Java Script
    ================================================== --> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    <script src="js/jquery-1.11.3.min.js"></script>
    <script src="js/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script type="text/javascript" src="js/ini.js"></script>
 
 </body>
 

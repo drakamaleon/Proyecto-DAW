@@ -1,0 +1,72 @@
+data2 = '[
+	{
+		"name": "Carmen Karina Vaca Ruiz",
+		"password": "carmenvaca",
+		"email": "cvaca@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968",
+		"ejercicios":"50",
+		"nivel":"42",
+		"imagen": "images/profile-pictures/cvaca_0.jpg"
+	},
+		{
+		"name": "Marco Antonio Calderón Argüello",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968",
+		"ejercicios":"50",
+		"nivel":"42",
+		"imagen": "images/profile-pictures/mcalderon.jpg"
+	},
+		{	
+		"name": "Rafael Ignacio Bonilla Armijos",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968",
+		"ejercicios":"50",
+		"nivel":"42",
+		"imagen": "images/profile-pictures/rafael bonilla.jpg"
+	},
+		{	
+		"name": "Cristina Lucia Abad Robalino",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968",
+		"ejercicios":"50",
+		"nivel":"42",
+		"imagen": "images/profile-pictures/mcalderon.jpg"
+	},
+		{	
+		"name": "Orlando Enrique Zambrano Moreno",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968",
+		"ejercicios":"50",
+		"nivel":"42",
+		"imagen": "images/profile-pictures/mcalderon.jpg"
+	},
+		{	
+		"name": "Jose Antonio Viteri Cuenca",
+		"password": "marcoscalderon",
+		"email": "javiteri@espol.edu.ec",
+		"type":"estudiante",
+		"birthday": "22-10-1968",
+		"ejercicios":"50",
+		"nivel":"42",
+		"imagen": "images/profile-pictures/mcalderon.jpg"
+	},
+		{	
+		"name": "Carlos Leon",
+		"password": "marcoscalderon",
+		"email": "camaleon@espol.edu.ec",
+		"type":"estudiante",
+		"birthday": "22-10-1968",
+		"ejercicios":"50",
+		"nivel":"42",
+		"imagen": "images/profile-pictures/mcalderon.jpg"
+	}
+]' ;

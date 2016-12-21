@@ -1,5 +1,3 @@
-
-
 /**
  * =================================================================== 
  *
@@ -1441,7 +1439,7 @@ a.menu-toggle {
 .process-content .image-part {
 	margin: 0 auto;
 	height: 660px;
-	background-image: url("../images/appdesign.jpg");
+	background-image: url("../images/appdesign.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: contain;
@@ -2370,5 +2368,34 @@ footer ul li {
 	background: #ff7b29;
 	color: #FFFFFF;
 }
+
+button #politicas,button #syllabus{
+	color: black;
+}
+
+#login{
+	padding: 50px;
+	text-align: center;
+}
+
+#ulogin,#clogin{
+	width: 100%;
+}
+li.nove{
+	display: none;
+}
+
+#cerrar{
+	display: none;
+}
+#main-nav-wrap .main-navigation li{
+	height: 60px;
+	vertical-align: text-top;
+}
+
+#top .sticky .row{
+	height: 73px;
+}
+
 
 /*# sourceMappingURL=main.css.map */
