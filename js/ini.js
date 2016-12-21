@@ -4,14 +4,15 @@ $(document).ready(function(){
 		case 'est':{
 			$("li.nove").css("display","inline-block");
 			$("li#soloprof").css("display","none");
-			$("a#cya").html('Cerrar Sesión');
-			$("#main-nav-wrap ul #highlighted").removeClass('with-sep');
+			$("#iniciar").css("display","none");
+			$("#cerrar").css("display","inline-block");
 			break;
 		}
 		case 'prof':{
 			$("li.nove").css("display","inline-block");
 			$("a#cya").html('Cerrar Sesión');
-			$("#main-nav-wrap ul #highlighted").removeClass('with-sep');
+			$("#iniciar").css("display","none");
+			$("#cerrar").css("display","inline-block");
 			break;
 		}
 		default:

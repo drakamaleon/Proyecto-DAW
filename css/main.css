@@ -2384,4 +2384,14 @@ button #politicas,button #syllabus{
 li.nove{
 	display: none;
 }
+#cerrar{
+	display: none;
+}
+#main-nav-wrap .main-navigation li{
+	height: 70px;
+	vertical-align: text-top;
+}
+#top .sticky .row{
+	height: 73px;
+}
 /*# sourceMappingURL=main.css.map */
