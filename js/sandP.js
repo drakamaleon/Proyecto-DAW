@@ -18,7 +18,6 @@ var ejer =[{"titulo":"TITULO1","autor":"AUTOR","dificultad":"FACIL","breve":"Res
 $(document).ready(function() {
 	
 		crearPestañas()
-		mostrarEjercicios(ejer,"prof")
 		var t1=$(".tabs a");
 		t1.click(function(event){
 			cambiarTab(event.target);
@@ -212,7 +211,7 @@ function cambiarTab(c){
 function agregarCont(id){
 	$(".contenido").empty()
 	if(id==1){
-		mostrarEjercicios(ejer,"prof")
+		iniciador()
 		
 	}
 	else {
@@ -313,6 +312,108 @@ function mostrarEjerciciosEditable(autor,ejercicios) {
 		}
 	}
 }
+
+
+function iniciador(){
+	var url = "data/ejercicios.json";
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+
+				
+				if (xhttp.readyState ==4 && xhttp.status == 200){
+					//console.log(xhttp.status);
+					//console.log(xhttp.response);
+					var json = JSON.parse(xhttp.responseText) ;
+					
+					for (i = 0 ; i<json.length ; i++){
+
+						progress=document.createElement("div")
+									$(progress).addClass('progress')
+									barra=document.createElement("div")
+										$(barra).addClass("progress-bar progress-bar-info")
+										mensaje=json[i].hecho+"% Exitos"
+										$(barra).html(mensaje)
+										$(barra).attr({
+											role: 'progressbar',
+											"aria-valuenow": json[i].hecho,
+											"aria-valuemin": '0',
+											"aria-valuemax": '99',
+										});
+										ancho=json[i].hecho/2+"%"
+										$(barra).css('width', ancho);
+									$(progress).append(barra)
+						console.log(json[i].dificultad)
+						if(json[i].dificultad=="FACIL"){
+			
+							color = "rgba(0,255,0,0.3);"	
+						}
+						if(json[i].dificultad=="MEDIO"){
+							color = "rgba(19, 177, 203, 0.71);"
+						}
+						if(json[i].dificultad=="DIFICIL") {
+							
+							color = "rgba(189, 30, 63, 0.61);"
+						}
+
+						$(".contenido").append(
+							'<div class="panel panel-default name="' + i + '">' + 
+								'<div class="panel-heading" role="tab" id="heading' + i + '">' + 
+									'<h4 class="panel-title ">' + 
+										'<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse'+ i +'" aria-expanded="false" aria-controls="collapse'+ i + '">'+
+											json[i].titulo + 
+										'</a>' + 
+									'</h4>' + 
+								'</div>' +  
+								'<div id="collapse'+ i + '" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading'+ i +'">' + 
+									'<div class="panel-body">'+
+										'<div class="row">'+
+											'<div class=\"col-lg-12 ">'+
+												'<div class=\"col-xs-12 col-sm-12 col-md-12\">'+
+													'<p class="acordeon-title"> <br> Autor</b></p> '+
+													'<p class="acordeon-content"> '+ json[i].autor +' </p>'+
+												'</div>'+
+												'<div class=\" col-lg-12\">'+
+													'<p class="acordeon-title"> <b> Dificultad</b></p> '+
+													'<p class="acordeon-content" style="width: 10%; background-color:'+color+'"">'+ json[i].dificultad +' </p>'+
+												'</div>'+
+												'<hr>'+
+												'<div class="Descripcion">'+
+													'<p class="acordeon-title"> <b> Breve Descripcion</b></p> '+
+													'<p class="acordeon-content"> '+ json[i].breve +' </p>'+
+												'</div>'+
+												'<div class="etiquetas">'+
+													'<p class="acordeon-title"> <b> Etiquetas</b></p> '+
+													'<a class="btn btn-success" href="subir ejercicio.html"></ejercicio>RESOLVER</a>'+
+												'</div><hr>'+
+												'<div class="etiquetas">'+
+													'<p class="acordeon-title"> <b> Etiquetas</b></p> '+
+													'<p class="acordeon-content"> '+ json[i].etiquetas +' </p>'+
+												'</div><hr>'+
+												'<div class="aprobados">'+
+													$(progress).html()+
+												'</div>'+
+
+												
+											'</div>'+
+										'</div>'+
+									'</div>' + 
+								'</div>' +
+							'</div>'
+
+						)
+
+
+
+
+
+					}				
+				}
+			}
+			
+			xhttp.open("GET", url);
+			xhttp.send();
+}
+
 
 
 function mostrarEjercicios(ejercicios,u) {
@@ -485,7 +586,7 @@ function mostrarEjercicios(ejercicios,u) {
 function crearPestañas () {
 	content = $(".content")
 		tab = document.createElement("ul");
-		$(content).css('backgroundColor', 'black');
+		$(content).css('backgroundColor', "#048a7c");
 			$(tab).addClass('tabs')
 			$(tab).attr('id', 'nav');
 			$(tab).css('marginBottom', '0');
@@ -494,9 +595,10 @@ function crearPestañas () {
 		    	
 		    	spaEj = document.createElement("span")
 		    		$(spaEj).html("Ejercicios")
-		    		$(spaEj).addClass('btn active')
+		    		
 		    		$(spaEj).attr('id','1')
 		    		$(spaEj).css('width', '15%');
+		    		
 		    	$(ej).append(spaEj)
 		    edit = document.createElement("a")
 		    	
@@ -509,7 +611,7 @@ function crearPestañas () {
 		    $(tab).append(ej)
 		    $(tab).append(edit)
 		contenido = document.createElement("div")
-			$(contenido).addClass('contenido')
+			$(contenido).addClass('contenido container')
 		$(content).append(tab)
 		$(content).append(contenido)
 }
