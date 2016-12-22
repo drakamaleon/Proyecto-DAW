@@ -2394,4 +2394,7 @@ li.nove{
 #top .sticky .row{
 	height: 73px;
 }
+.main-navigation li.current a::after{
+	background-color: #05bca9;
+}
 /*# sourceMappingURL=main.css.map */

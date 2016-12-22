@@ -25,22 +25,30 @@
   	})
 
 
-	/*----------------------------------------------------*/
+/*----------------------------------------------------*/
 	/*	Sticky Navigation
 	------------------------------------------------------*/
    $(window).on('scroll', function() {
 
 		var y = $(window).scrollTop(),
 		    topBar = $('header');
+		var t = /\/index/;
+      	var u = document.location.href;
      
 	   if (y > 1) {
 	      topBar.addClass('sticky');
 	   }
-      else {
+      else{ 
+      	if(t.test(u)){
          topBar.removeClass('sticky');
       }
+  }
     
 	});
+
+   
+
+
 	
 
 	/*-----------------------------------------------------*/
@@ -75,29 +83,29 @@
    /*----------------------------------------------------*/
   	/* Highlight the current section in the navigation bar
   	------------------------------------------------------*/
-	var sections = $("section"),
-	navigation_links = $("#main-nav-wrap li a");	
+	// var sections = $("section"),
+	// navigation_links = $("#main-nav-wrap li a");	
 
-	sections.waypoint( {
+	// sections.waypoint( {
 
-       handler: function(direction) {
+ //       handler: function(direction) {
 
-		   var active_section;
+	// 	   var active_section;
 
-			active_section = $('section#' + this.element.id);
+	// 		active_section = $('section#' + this.element.id);
 
-			if (direction === "up") active_section = active_section.prev();
+	// 		if (direction === "up") active_section = active_section.prev();
 
-			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
+	// 		var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
 
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
+ //         navigation_links.parent().removeClass("current");
+	// 		active_link.parent().addClass("current");
 
-		}, 
+	// 	}, 
 
-		offset: '25%'
+	// 	offset: '25%'
 
-	});
+	// });
 
 
 	/*----------------------------------------------------*/

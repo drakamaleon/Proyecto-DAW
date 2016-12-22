@@ -1,6 +1,8 @@
 
 
 function lectorPanel(){
+
+	
 	var url = "data/proyects.json";
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function(){
@@ -24,14 +26,14 @@ function lectorPanel(){
 				fechaTimestamp = new Date(comprobador)
 			}
 
-
-
 			if ((titulo=="")||(descripcion=="")||(etiquetas=="")||(fecha=="")){
-				alert("No ha llenado todos los campos")
+				$(".oculto").text("no ha llenado todos los campos")
 
-			}else if (timeActual > fechaTimestamp){
-				alert("la fecha definida para la entrega ya paso !!")
-			}else{
+			}
+			else if (timeActual > fechaTimestamp){
+				$(".oculto").text("la fecha definida para la entrega ya paso !!")
+			}
+			else{
 
 						$("#accordion").append(
 							'<div class="panel panel-default name="' + size+1 + '">' + 
@@ -72,6 +74,11 @@ function lectorPanel(){
 							'</div>'
 
 						)
+				
+				$('#myModal').modal('hide');
+				$('#myModal').on('hidden.bs.modal', function (e) {
+  					$(".oculto").text("")
+				})
 
 			}
 

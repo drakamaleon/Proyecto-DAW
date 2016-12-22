@@ -20,7 +20,14 @@
         // will fade out the whole DIV that covers the website.
         $("#preloader").delay(300).fadeOut("slow");
 
-      });       
+      }); 
+
+      $('#myModal').on('show.bs.modal', function (event) {
+      	  console.log("hola mundo")
+		  var button = $(event.relatedTarget) // Button that triggered the modal
+		  var modal = $(this)
+		  modal.find('.oculto').text('')
+		})      
 
   	})
 

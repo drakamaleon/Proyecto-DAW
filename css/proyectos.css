@@ -54,7 +54,7 @@ div.icono{
     width: 8%;
     height: 10%;
 }
-*/
+
 
 
 div.icono{
@@ -62,7 +62,19 @@ div.icono{
 	background-color: white;
 	color: black;
 }
+*/
+div.icono2{
+	position: fixed;
+    bottom: 30%;
+    right: 7%;
+    z-index: 2;
+    margin: 0;
+    height: 60px;
+    width: 60px;
 
+	color: black;
+
+}
 
 
 
@@ -73,7 +85,7 @@ div.icono{
 
 .btn-modal{
 	color: white;
-	background-color: #05bca9;
+	background-color: #048a7c;
 
 }
 
@@ -99,4 +111,10 @@ div.icono{
 	
 .modal-footer .btn-group:last-child > button {
 	border-right: 0;
+}
+
+#advertencia{
+	color: red;
+	text-align: center;
+	font-weight: bold;
 }

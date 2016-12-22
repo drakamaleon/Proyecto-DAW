@@ -1,10 +1,10 @@
 
 
-var ejer =[{"titulo":"TITULO1","autor":"AUTOR","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO2","autor":"AUTOR","dificultad":"MEDIO","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO3","autor":"AUTOR","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO4","autor":"AUTOR","dificultad":"DIFICIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"},
-		 {"titulo":"TITULO5","autor":"AUTOR2","dificultad":"FACIL","breve":"Resuen resumen","etiquetas":["et1","et2","et3"],"hecho":"50","descripcion":"des desde desde","entradas":"desc de entrads","salidas":"desc de salidas"}
+var ejer =[{"titulo":"Cubo de Rubik","autor":"Rafael Bonilla","dificultad":"FACIL","breve":"Crear un cubo de Rubik para resolverse solo","etiquetas":["POO","Rubik"],"hecho":"50","descripcion":"Crear un cubo de Rubik para resolverse solo","entradas":"Cubo desordenado","salidas":"Pasos para resolver el cubo"},
+		 {"titulo":"Generador de QUeries","autor":"Ivette Carrera","dificultad":"MEDIO","breve":"Generar queries automaticamente  dado una peticion","etiquetas":["Bases de Datos","Queries"],"hecho":"50","descripcion":"Crear un cubo de Rubik para resolverse solo","entradas":"Peticion de queries","salidas":"Query"},
+		 {"titulo":"Cubo de Rubik","autor":"Rafael Bonilla","dificultad":"FACIL","breve":"Crear un cubo de Rubik para resolverse solo","etiquetas":["POO","Rubik"],"hecho":"50","descripcion":"des desde desde","entradas":"Crear un cubo de Rubik para resolverse solo","salidas":"Pasos para resolver el cubo"},
+		 {"titulo":"Generador de QUeries","Ivette Carrera":"AUTOR","dificultad":"DIFICIL","breve":"Generar queries automaticamente  dado una peticion","etiquetas":["Bases de Datos","Queries"],"hecho":"50","descripcion":"Crear un cubo de Rubik para resolverse solo","entradas":"desc de entrads","salidas":"Query"},
+		 {"titulo":"Cubo de Rubik","autor":"Rafael Bonilla","dificultad":"FACIL","breve":"Crear un cubo de Rubik para resolverse solo","etiquetas":["POO","Rubik"],"hecho":"50","descripcion":"des desde desde","entradas":"Crear un cubo de Rubik para resolverse solo","salidas":"Pasos para resolver el cubo"}
 		]
 $(document).ready(function() {
 	mostrarEjercicios(ejer)

@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Fundamentos de Programación-Espol</title>
+	<title>Perfil-Fundamentos de Programación</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -21,7 +21,7 @@
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">  
-   <link rel="stylesheet" href="css/perfil.css">  
+   <link rel="stylesheet" href="css/perfil.css">
 
    <!-- script
    ================================================== -->
@@ -38,33 +38,37 @@
    ================================================== -->
    <header class="sticky">
 
-      <div class="row">
+    <div class="row">
 
-         <div class="logo">
-            <a href="index.html">Fundamentos de Programación</a>
-         </div>
+      <div class="logo">
+           <a href="#" onclick="ini();">Fundamentos de Programación</a>
+        </div>
 
-        <nav id="main-nav-wrap">
-          <ul class="main-navigation">
-            <li class="current" onclick="inicio();"><a class="smoothscroll"  href="#intro"  title="">Inicio</a></li>
-                 <li class="with-sep nove"><a href="#" title="">SANDBOX</a></li>
-                 <li class="nove" id="soloprof"><a class="smoothscroll"  href="#" title="">Proyectos</a></li>
-                 <li class="with-sep nove"><a href="#" title="">Perfil</a></li>       
-            <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="index.html" title="">Cerrar Sesión</a></div></li>
-                 
+      <nav id="main-nav-wrap">
+        <ul class="main-navigation">
+          <li onclick="inicio();"><a href="#" title="">Inicio</a></li>
+          <li onclick="curso();"><a href="#" title="">El Curso</a></li>
+          <li onclick="semana();"><a href="#" title="">Semana</a></li>
+          <li onclick="equipo();"><a href="#" title="">Equipo</a></li>
+          <li onclick="ayudantias();"><a href="#" title="">Ayudantías</a></li>
+               <li class="with-sep nove" onclick="sandbox();"><a href="#" title="">SANDBOX</a></li>
+               <li class="nove" id="soloprof" onclick="proyectos();"><a  href="#"  title="">Proyectos</a></li>
+               <li class="with-sep nove current" onclick="perfil();"><a href="#"  title="">Perfil</a></li>       
+          <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="#login-popup" title="">Iniciar Sesión</a></div></li>
+               <li class="highlight"><a id="cerrar" href="index.html" title="">Cerrar Sesión</a></li>
 
-          </ul>
-        </nav>
+        </ul>
+      </nav>
 
-         <a class="menu-toggle" href="#"><span>Menu</span></a>
-         
-      </div>      
+      <a class="menu-toggle" href="#"><span>Menu</span></a>
       
-   </header> <!-- /header -->
+    </div>    
+    
+   </header> <!-- /header --> 
+      
    <section id="process">
 
-
-      <div class="row">
+   <div class="row">
 
          <div class="col-twelve perfil">
       
@@ -72,9 +76,106 @@
          </div>
          
       </div> <!--row -->   
-      
-   </section>
-   <footer>
+
+        <!--
+
+            <div align="center">
+               <img src="images/profile-pictures/rafael bonilla.jpg" class="img-responsive img-circle">
+            </div>
+               
+            <div >
+               <h2 >
+               Rafael Bonilla       
+               </h2>
+            </div>
+
+            <div>
+
+               <table>
+                 <tbody>
+                   <tr>
+                     <td class="title">Correo Electrónico:</td>
+                     <td><a href="mailto:info@support.com">info@support.com</a></td>                 
+                   </tr>
+                   <tr>
+                     <td class="title">Fecha de Nacimiento</td>
+                     <td>01/24/1988</td>           
+                   </tr>
+                   <tr>
+                     <td class="title">Ejercicios propuestos</td>
+                     <td>50</td>          
+                   </tr>
+                   <tr>
+                     <td class="title">Nivel</td>
+                     <td>42</td>
+                  </tr>
+                 </tbody>
+               </table>
+
+            </div>  
+            -->  
+
+                  <!--
+         <div class="panel panel-default perfil ">
+
+            
+               <div class="panel-heading">
+                  <h3 class="panel-title"> Rafael Ignacio Bonilla Armijos </h3>
+               </div>
+               <div class="panel-body">
+                  <div class="row ">
+                     <div class="col-xs-12 col-sm-12 col-md-3 imagenPerfil" align="center">
+                        <img src="images/profile-pictures/rafael bonilla.jpg" class="img-responsive img-circle">
+                        
+                     </div>
+                     <div class=" col-md-9 col-lg-9 "> 
+                           <table class="table table-user-information">
+                             <tbody>
+
+                               <tr>
+                                 <td class="title">Correo Electrónico:</td>
+                                 <td><a href="mailto:info@support.com">info@support.com</a></td>
+                               </tr>
+                               <tr>
+                                 <td class="title">Fecha de Nacimiento</td>
+                                 <td>01/24/1988</td>
+                               </tr>
+
+                               <tr>
+                                 <td class="title">Ejercicios propuestos</td>
+                                 <td>50</td>
+                               </tr>
+                               <tr>
+                                 <td class="title">Nivel</td>
+                                 <td>42</td>
+                               </tr>
+                              
+                             </tbody>
+                           </table>
+                     </div>
+                  </div>
+               </div>
+               
+         </div>
+         -->
+
+  <div id="login-popup" class="popup-modal mfp-hide">
+ 
+          
+          <div class="fluid-video-wrapper" id="log">
+                <form id="login" class="group" width="300" height="201">
+                   <p>Usuario:</p><input id="ulogin" type="text" placeholder="Ingrese su correo Espol completo" >
+                   <p>Contraseña:</p><input id="clogin" type="password" placeholder="Ingrese su contraseña" >
+                   <button onclick="login();"><input type="submit" value="Ingresar"></button>
+                </form>
+          </div>              
+
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup -->        
+
+    </section>
+<footer>
 
     <div class="footer-main">
 
@@ -180,87 +281,6 @@ pública o distribución sin autorización previa del titular de los derechos</a
    <script src="js/proyectos.js"></script>
    <script type="text/javascript" src="js/perfil.js"></script>
    <script src="js/cargar.js"></script>
+   <script type="text/javascript" src="js/ini.js"></script>
 </body>
 </html>
-
-        <!--
-
-            <div align="center">
-               <img src="images/profile-pictures/rafael bonilla.jpg" class="img-responsive img-circle">
-            </div>
-               
-            <div >
-               <h2 >
-               Rafael Bonilla       
-               </h2>
-            </div>
-
-            <div>
-
-               <table>
-                 <tbody>
-                   <tr>
-                     <td class="title">Correo Electrónico:</td>
-                     <td><a href="mailto:info@support.com">info@support.com</a></td>                 
-                   </tr>
-                   <tr>
-                     <td class="title">Fecha de Nacimiento</td>
-                     <td>01/24/1988</td>           
-                   </tr>
-                   <tr>
-                     <td class="title">Ejercicios propuestos</td>
-                     <td>50</td>          
-                   </tr>
-                   <tr>
-                     <td class="title">Nivel</td>
-                     <td>42</td>
-                  </tr>
-                 </tbody>
-               </table>
-
-            </div>  
-            -->  
-
-                  <!--
-         <div class="panel panel-default perfil ">
-
-            
-               <div class="panel-heading">
-                  <h3 class="panel-title"> Rafael Ignacio Bonilla Armijos </h3>
-               </div>
-               <div class="panel-body">
-                  <div class="row ">
-                     <div class="col-xs-12 col-sm-12 col-md-3 imagenPerfil" align="center">
-                        <img src="images/profile-pictures/rafael bonilla.jpg" class="img-responsive img-circle">
-                        
-                     </div>
-                     <div class=" col-md-9 col-lg-9 "> 
-                           <table class="table table-user-information">
-                             <tbody>
-
-                               <tr>
-                                 <td class="title">Correo Electrónico:</td>
-                                 <td><a href="mailto:info@support.com">info@support.com</a></td>
-                               </tr>
-                               <tr>
-                                 <td class="title">Fecha de Nacimiento</td>
-                                 <td>01/24/1988</td>
-                               </tr>
-
-                               <tr>
-                                 <td class="title">Ejercicios propuestos</td>
-                                 <td>50</td>
-                               </tr>
-                               <tr>
-                                 <td class="title">Nivel</td>
-                                 <td>42</td>
-                               </tr>
-                              
-                             </tbody>
-                           </table>
-                     </div>
-                  </div>
-               </div>
-               
-         </div>
-         -->

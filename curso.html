@@ -7,35 +7,42 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-   <title>SANDBOX-Fundamentos de Programación</title>
-   <meta name="description" content="">  
-   <meta name="author" content="">
+  <title>El Curso-Fundamentos de Programación</title>
+  <meta name="description" content="">  
+  <meta name="author" content="">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
    <!-- mobile specific metas
    ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-   <!-- CSS
+  <!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css"> 
-   <link rel="stylesheet" href="css/stiloSandP.css"> 
-   <link rel="stylesheet" href="css/sandboxP.css"> 
-   <link rel="stylesheet" type="text/css" href="floaty-master/floaty.css">   
+   <link rel="stylesheet" href="css/vendor.css">     
+
 
    <!-- script
    ================================================== -->
-   <script src="js/modernizr.js"></script>
+  <script src="js/modernizr.js"></script>
+      <script src="js/equipo.js"></script>
 
    <!-- favicons
-   ================================================== -->
-   <link rel="icon" type="image/png" href="favicon.png">
+  ================================================== -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
 <body id="top">
+
+  <!-- header 
+   ================================================== -->
    <header class="sticky">
 
     <div class="row">
@@ -47,12 +54,12 @@
       <nav id="main-nav-wrap">
         <ul class="main-navigation">
           <li onclick="inicio();"><a href="#" title="">Inicio</a></li>
-          <li onclick="curso();"><a href="#" title="">El Curso</a></li>
+          <li class="current" onclick="curso();"><a href="#" title="">El Curso</a></li>
           <li onclick="semana();"><a href="#" title="">Semana</a></li>
           <li onclick="equipo();"><a href="#" title="">Equipo</a></li>
           <li onclick="ayudantias();"><a href="#" title="">Ayudantías</a></li>
-               <li class="with-sep nove current" onclick="sandbox();"><a href="#" title="">SANDBOX</a></li>
-               <li class="nove" id="soloprof" onclick="proyectos();"><a  href="#"  title="">Proyectos</a></li>
+               <li class="with-sep nove" onclick="sandbox();"><a href="#" title="">SANDBOX</a></li>
+               <li class="nove " id="soloprof" onclick="proyectos();"><a  href="#"  title="">Proyectos</a></li>
                <li class="with-sep nove" onclick="perfil();"><a href="#"  title="">Perfil</a></li>       
           <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="#login-popup" title="">Iniciar Sesión</a></div></li>
                <li class="highlight"><a id="cerrar" href="index.html" title="">Cerrar Sesión</a></li>
@@ -66,12 +73,71 @@
     
    </header> <!-- /header -->
 
-   <section id="process" style="padding-top: 5%; "> 
-      <div class="content"></div>
-   </section> <!-- /process-->  
-   <div id="mod"></div>
+    <!-- Process Section
+   ================================================== -->
+   <section id="process">  
 
-<div id="login-popup" class="popup-modal mfp-hide">
+    <div class="row section-intro">
+      <div class="col-twelve with-bottom-line">
+
+        <h5>El curso</h5>
+        <h1>¿Qué comprende?</h1>
+
+        <p class="lead">Aquí te dejamos la información necesaria del curso</p>
+
+      </div>      
+    </div>
+
+    <div class="row process-content">
+
+      <div class="left-side">
+
+        <div class="item" data-item="1">
+
+          <h5>Descripción</h5>
+
+          <p>El curso presenta a los estudiantes estrategias para resolver problemas comunes en diversas profesiones por medio del diseño e implementación de soluciones basadas en el uso de un lenguaje de programación. Cubre los principios básicos para que el estudiante pueda leer y escribir programas; haciendo énfasis en el diseño y análisis de algoritmos. Además, introduce a los estudiantes en el uso de herramientas de desarrollo y depuración.</p>
+            
+        </div>
+
+        <div class="item" data-item="2">
+
+          <h5>Syllabus</h5>
+
+               <div class='video-link'>
+            <a type="button" class="btn" id="syllabus" href="#pdfsyll-popup"><button>Ver Syllabus</button></a>
+          </div>
+        </div>
+          
+      </div> <!-- /left-side -->
+
+      <div class="right-side">
+          
+        <div class="item" data-item="3">
+
+          <h5>Requisitos</h5>
+
+          <p><h6>Pre-Requisitos:</h6>Herramientas de Colaboración Digital<br><br><h6>Co-Requisitos:</h6>Ninguno<br><br><h6>Nivel mínimo de estudios:</h6> No aplica<br><br><br><br><br></p>
+            
+        </div>
+
+        <div class="item" data-item="4">
+
+          <h5>Políticas</h5>
+
+               <div class='video-link'>
+            <a type="button" class="btn" id="politicas" href="#pdfpol-popup"><button>Ver Políticas</button></a>
+               </div>
+            
+        </div>
+
+      </div> <!-- /right-side -->
+
+      <div class="image-part"></div>        
+
+    </div> <!-- /process-content --> 
+
+    <div id="login-popup" class="popup-modal mfp-hide">
  
           
           <div class="fluid-video-wrapper" id="log">
@@ -86,7 +152,28 @@
 
       </div> <!-- /video-popup -->        
 
-   <footer>
+   </section> <!-- /process--> 
+
+   <div id="pdfpol-popup" class="popup-modal mfp-hide">
+
+         <div class="fluid-video-wrapper">
+            <iframe src="data/Politicas.pdf" width="100%" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+         </div>           
+
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup --> 
+
+      <div id="pdfsyll-popup" class="popup-modal mfp-hide">
+
+         <div class="fluid-video-wrapper">
+            <iframe src="data/Syllabus.pdf" width="100%" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+         </div>           
+
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup -->
+  <footer>
 
     <div class="footer-main">
 
@@ -179,30 +266,26 @@ pública o distribución sin autorización previa del titular de los derechos</a
 
       </div>
 
-   </footer> 
+   </footer>  
 
-      <!-- Java Script
+   <div id="preloader"> 
+      <div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
    ================================================== --> 
-
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    <script src="js/jquery-1.11.3.min.js"></script>
    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-   <script
-      src="https://code.jquery.com/jquery-3.1.1.js"
-      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-      crossorigin="anonymous"></script>
    <script src="js/plugins.js"></script>
-   <script src="js/proyectos.js"></script>
-   <script src="floaty-master/floaty.js"></script>
-   <script src="js/proyectosIniciador.js"></script>
-   <script src="js/proyectos2.js"></script>
-   <script src="js/sandBoxE.js"></script>
+   <script src="js/main.js"></script>
    <script src="js/cargar.js"></script>
    <script type="text/javascript" src="js/ini.js"></script>
-
-
-
-
+   <script src="js/cargar.js"></script>
+   <script type="text/javascript" src="js/ayudantes.js"></script>
+   <script type="text/javascript" src="js/maps.js"></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAegz_vVps7XUeq-PtRKnVrga1pimNYlYw &callback=initializeMap" type="text/javascript"></script>
 </body>
-</html>
+
+</html>   

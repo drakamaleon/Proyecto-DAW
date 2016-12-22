@@ -34,7 +34,9 @@ function identificador() {
 		return "pub";
 	}
 	return;
-}function login(){
+}
+
+function login(){
  	var url = "data/data.json"
  	var xhttp = new XMLHttpRequest();
  	xhttp.onreadystatechange = function(){
@@ -80,40 +82,3 @@ function identificador() {
  }
 
 
-function perfil(){
-	var location = document.location.href;
-	var data = location.split("?")
-	var param = data[1]
-	if (data.length > 2){
-		param = data[2]
-	}
-	
-	window.location = "perfil.html?" + param;
-}
-
-function proyectos(){
-	var location = document.location.href;
-	var data = location.split("?")
-	var param = data[1]
-	if (data.length > 2){
-		param = data[2]
-	}
-	window.location = "proyectos.html?" + param;
-}
-
-function sandbox(){
-	var location = document.location.href;
-	var data = location.split("?")
-	var param = data[1]
-	if (data.length > 2){
-		param = data[2]
-	}
-	var temporal = param.split("=")
-	if (temporal[0]=="estudiante"){
-		window.location = "sandboxE.html?" + param;
-	}else{
-		window.location = "sandboxP.html?" + param;
-	}
-
-
-}
