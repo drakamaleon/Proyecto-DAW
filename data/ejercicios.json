@@ -2,5 +2,5 @@
 		 {"titulo":"Queries","autor":"Ivette Carrera","dificultad":"MEDIO","breve":"Generar queries ","etiquetas":["bases de Datos","Query"],"hecho":"50","descripcion":"Generarqueries de bases de datos","entradas":"peticion del cliente","salidas":"queries realizados"},
 		 {"titulo":"Cubo Rubik","autor":"Rafael Bonilla","dificultad":"FACIL","breve":"Crear cubo de rubik","etiquetas":["POO","Rubik"],"hecho":"50","descripcion":"Crear cubo de Rubik que se resuelve solo","entradas":"cubo de rubik","salidas":"pasos para resolverlo"},
 		 {"titulo":"Queries","autor":"Ivette Carrera","dificultad":"DIFICIL","breve":"Generar queries ","etiquetas":["bases de Datos","Query"],"hecho":"50","descripcion":"Crear cubo de Rubik que se resuelve solo","entradas":"peticion del cliente","salidas":"queries realizados"},
-		 {"titulo":"Rubik","autor":"Rafael Bonilla","dificultad":"FACIL","breve":"Crear cubo de rubik","etiquetas":["POO","Rubik"],"hecho":"30	","descripcion":"Crear cubo de Rubik que se resuelve solo","entradas":"cubo de rubik","salidas":"pasos para resolverlo"}
+		 {"titulo":"Rubik","autor":"Rafael Bonilla","dificultad":"FACIL","breve":"Crear cubo de rubik","etiquetas":["POO","Rubik"],"hecho":"30","descripcion":"Crear cubo de Rubik que se resuelve solo","entradas":"cubo de rubik","salidas":"pasos para resolverlo"}
 		]
