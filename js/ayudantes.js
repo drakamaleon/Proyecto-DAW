@@ -24,6 +24,7 @@ function llenarAyudantes(){
                console.log($(".pricing-tables.block-1-4.group").html())
 
                for (i = 0 ; i<json.length-1 ; i++){
+                img=i%3+1
                    $(".pricing-tables.block-1-2.group").append(
                 "              <div class=\"bgrid\"> "
 
@@ -37,10 +38,10 @@ function llenarAyudantes(){
                   +                    "                </div>                "
 
                 +   "<div class=\"bottom-part\">"
-                 +  "<img src=\"images/avatars/avatar-1.jpg\">"
-                  + "     <div class=\"video-link\">"
-                   +        "<a href=\"#horario-popup\" class=\"button large\"> Ver Horario </a>"
-                    +    "</div>"
+                 +  "<ul class=\"features\"><li><img style=\"border-radius: 50%;\" src=\"images/avatars/avatar-"+img.toString()+".jpg\"></li>"
+                  + "<li><div class=\'video-link\'>"
+                   +        "<a href=\"#horario-popup\" class=\"button large\"> Ver Horario </a></li>"
+                    +    "</ul></div>"
                      
                  + "</div>"
         +      " </div>   "         

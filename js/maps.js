@@ -34,4 +34,5 @@ function initializeMap(lat,lon) {
     }
 
     //show map on modal
+
     

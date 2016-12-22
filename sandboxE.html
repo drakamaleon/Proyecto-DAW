@@ -24,7 +24,7 @@
    <link rel="stylesheet" href="css/stiloSandP.css"> 
    <link rel="stylesheet" href="css/sandboxP.css"> 
    <link rel="stylesheet" type="text/css" href="floaty-master/floaty.css">   
-
+   <link rel="stylesheet" href="css/proyectos.css"> 
    <!-- script
    ================================================== -->
    <script src="js/modernizr.js"></script>
@@ -47,13 +47,13 @@
       <nav id="main-nav-wrap">
         <ul class="main-navigation">
           <li onclick="inicio();"><a href="#" title="">Inicio</a></li>
-          <li onclick="curso();"><a href="#" title="">El Curso</a></li>
-          <li onclick="semana();"><a href="#" title="">Semana</a></li>
-          <li onclick="equipo();"><a href="#" title="">Equipo</a></li>
-          <li onclick="ayudantias();"><a href="#" title="">Ayudantías</a></li>
+          <li onclick="inicio();"><a href="#" title="">El Curso</a></li>
+          <li><a href="#" title="">Semana a semana</a></li>
+          <li onclick="inicio();"><a href="#" title="">Equipo</a></li>
+          <li onclick="inicio();"><a href="#" title="">Ayudantías</a></li>
                <li class="with-sep nove current" onclick="sandbox();"><a href="#" title="">SANDBOX</a></li>
-               <li class="nove" id="soloprof" onclick="proyectos();"><a  href="#"  title="">Proyectos</a></li>
-               <li class="with-sep nove" onclick="perfil();"><a href="#"  title="">Perfil</a></li>       
+               <li class="nove" id="soloprof"><a  href="#" onclick="proyectos();" title="">Proyectos</a></li>
+               <li class="with-sep nove"><a href="#" onclick="perfil();" title="">Perfil</a></li>       
           <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="#login-popup" title="">Iniciar Sesión</a></div></li>
                <li class="highlight"><a id="cerrar" href="index.html" title="">Cerrar Sesión</a></li>
 
@@ -67,25 +67,11 @@
    </header> <!-- /header -->
 
    <section id="process" style="padding-top: 5%; "> 
-      <div class="content"></div>
+      <div id="accordion">
+        <div class="container"></div>
+      </div>
    </section> <!-- /process-->  
    <div id="mod"></div>
-
-<div id="login-popup" class="popup-modal mfp-hide">
- 
-          
-          <div class="fluid-video-wrapper" id="log">
-                <form id="login" class="group" width="300" height="201">
-                   <p>Usuario:</p><input id="ulogin" type="text" placeholder="Ingrese su correo Espol completo" >
-                   <p>Contraseña:</p><input id="clogin" type="password" placeholder="Ingrese su contraseña" >
-                   <button onclick="login();"><input type="submit" value="Ingresar"></button>
-                </form>
-          </div>              
-
-         <a class="close-popup">Cerrar</a>         
-
-      </div> <!-- /video-popup -->        
-
    <footer>
 
     <div class="footer-main">
@@ -195,10 +181,10 @@ pública o distribución sin autorización previa del titular de los derechos</a
    <script src="js/plugins.js"></script>
    <script src="js/proyectos.js"></script>
    <script src="floaty-master/floaty.js"></script>
-   <script src="js/proyectosIniciador.js"></script>
-   <script src="js/proyectos2.js"></script>
+   
+   
    <script src="js/sandBoxE.js"></script>
-   <script src="js/cargar.js"></script>
+   <script type="text/javascript" src="cargar.js"></script>
    <script type="text/javascript" src="js/ini.js"></script>
 
 

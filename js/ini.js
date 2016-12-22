@@ -37,6 +37,7 @@ function identificador() {
 }
 
 function login(){
+	console.log("me ejecuto")
  	var url = "data/data.json"
  	var xhttp = new XMLHttpRequest();
  	xhttp.onreadystatechange = function(){

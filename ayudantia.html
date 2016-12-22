@@ -48,13 +48,13 @@ th, td {
       <nav id="main-nav-wrap">
         <ul class="main-navigation">
           <li onclick="inicio();"><a href="#" title="">Inicio</a></li>
-          <li onclick="curso();"><a href="#" title="">El Curso</a></li>
-          <li onclick="semana();"><a href="#" title="">Semana</a></li>
-          <li onclick="equipo();"><a href="#" title="">Equipo</a></li>
-          <li class="current" onclick="ayudantias();"><a href="#" title="">Ayudantías</a></li>
+          <li onclick="inicio();"><a href="#" title="">El Curso</a></li>
+          <li><a href="#" title="">Semana a semana</a></li>
+          <li onclick="inicio();"><a href="#" title="">Equipo</a></li>
+          <li  class="current" onclick="inicio();"><a href="#" title="">Ayudantías</a></li>
                <li class="with-sep nove" onclick="sandbox();"><a href="#" title="">SANDBOX</a></li>
-               <li class="nove" id="soloprof" onclick="proyectos();"><a  href="#"  title="">Proyectos</a></li>
-               <li class="with-sep nove" onclick="perfil();"><a href="#"  title="">Perfil</a></li>       
+               <li class="nove" id="soloprof"><a  href="#" onclick="proyectos();" title="">Proyectos</a></li>
+               <li class="with-sep nove"><a href="#" onclick="perfil();" title="">Perfil</a></li>       
           <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="#login-popup" title="">Iniciar Sesión</a></div></li>
                <li class="highlight"><a id="cerrar" href="index.html" title="">Cerrar Sesión</a></li>
 
@@ -91,11 +91,12 @@ th, td {
 
          <div class="pricing-tables block-1-2 group">
 
-                             <div class="bgrid"> 
+          <div class="bgrid"> 
 
          <div class="price-block">
 
-                  <div class="top-part"> 
+                  <div class="top-part "> 
+
                  
                  <h3 class="plan-title">Ayudante</h3>
                   <p class="plan-price">Jorge Isaac Guerra Solís</p>
@@ -103,10 +104,12 @@ th, td {
                                  </div>                
 
                 <div class="bottom-part">
-                 <img src="images/avatars/avatar-1.jpg">
-                       <div class='video-link'>
-                   <a href="#horario-popup"  class="button large"> Ver Horario </a>
-                    </div>
+                <ul class="features">
+                 <li><img style="border-radius: 50%" src="images/avatars/avatar-1.jpg"></li>
+                 <li>      <div class='video-link'>
+                   <a href="#horario-popup"  class="button large"> Ver Horario </a></li>
+                  </ul>
+                   </div>
                      
                  </div>
         </div>           
@@ -122,7 +125,7 @@ th, td {
 
    </section> <!-- /pricing --> 
 
-   <div id="map-popup" style="width:auto; height: 0;""></div>
+   <div id="map-popup"></div>
 
    <div id="horario-popup" class="popup-modal mfp-hide">
 
@@ -135,33 +138,46 @@ th, td {
                   <tr>
                      <td>Lunes</td>
                      <td>17:00 - 18:00</td>
-                     <td><div class='video-link'>
-                   <a href="#mapa-popup" id="map" class="button large"> 24-A</a>
-                    </div></td>
+                     <td>
+                      <a class="button large">
+                      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+                       24-A
+                      </button>
+                      </a>
+                           </td>
                      <td>Laboratorio de ingenieria de Software</td>
                   </tr>
                   <tr>
                      <td>Lunes</td>
                      <td>17:00 - 18:00</td>
-                     <td><div class='video-link'>
-                   <a href="#mapa-popup" id="map" class="button large"> 24-A</a>
-                    </div><</td>
+                     <td>
+                      <a class="button large">
+                      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+                       24-A
+                      </button>
+                      </a></td>
                      <td>Laboratorio de ingenieria de Software</td>
                   </tr>
                   <tr>
                      <td>Lunes</td>
                      <td>17:00 - 18:00</td>
-                     <td><div class='video-link'>
-                   <a href="#mapa-popup" id="map" class="button large"> 24-A</a>
-                    </div></td></td>
+                     <td>
+                      <a class="button large">
+                      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+                       24-A
+                      </button>
+                      </a></td></td>
                      <td>Laboratorio de ingenieria de Software</td>
                   </tr>
                   <tr>
                      <td>Lunes</td>
                      <td>17:00 - 18:00</td>
-                     <td><div class='video-link'>
-                   <a href="#mapa-popup" id="map" class="button large"> 24-A</a>
-                    </div></td>
+                     <td>
+                      <a class="button large">
+                      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+                       24-A
+                      </button>
+                      </a></td>
                      <td>Laboratorio de ingenieria de Software</td>
                   </tr>
                   
@@ -172,284 +188,8 @@ th, td {
          <a class="close-popup">Cerrar</a>         
    </div> <!-- /video-popup -->
 
-		<div class ="row">
-			<div class ="col-lg-12">
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-							<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				<div class = "col-lg-3 col-md-6 col-xs-12">
-					<h1>Ayudante 1</h1>
-					<table>
-						<tr>
-							<th colspan="2">Horario</th>
-							<th colspan="2">Lugar</th>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						<tr>
-							<td>Lunes</td>
-							<td>17:00 - 18:00</td>
-							<td><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">24-A</button></td>
-	 						<td>Laboratorio de ingenieria de Software</td>
-						</tr>
-						
-					</table>
-				</div>
-				
-			</div>
+					
 			
-			**<!-- Modal -->**
 		    <div class="modal fade" id="myModal" role="dialog">
 		        <div class="modal-dialog">
 
@@ -464,7 +204,7 @@ th, td {
 		                    <div id="map_canvas" style="width:auto; height: 500px;"></div>
 		                </div>
 		                <div class="modal-footer">
-		                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 		                </div>
 		            </div>
 		        </div>
@@ -579,7 +319,6 @@ pública o distribución sin autorización previa del titular de los derechos</a
    <script src="js/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
-   <script src="js/cargar.js"></script>
    <script type="text/javascript" src="js/ini.js"></script>
    <script src="js/cargar.js"></script>
    <script type="text/javascript" src="js/ayudantes.js"></script>
