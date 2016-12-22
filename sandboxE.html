@@ -7,73 +7,63 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Fundamentos de Programación-Espol</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
+   <title>Lhander</title>
+   <meta name="description" content="">  
+   <meta name="author" content="">
 
    <!-- mobile specific metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<!-- CSS
+   <!-- CSS
    ================================================== -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">  
-   <link rel="stylesheet" href="css/perfil.css">  
+   <link rel="stylesheet" href="css/vendor.css"> 
+   <link rel="stylesheet" href="css/stiloSandP.css"> 
+   <link rel="stylesheet" href="css/sandboxP.css"> 
+   <link rel="stylesheet" type="text/css" href="floaty-master/floaty.css">   
 
    <!-- script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
+   <script src="js/modernizr.js"></script>
 
    <!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+   ================================================== -->
+   <link rel="icon" type="image/png" href="favicon.png">
 
 </head>
-<body id="top">
 
-   <!-- header 
-   ================================================== -->
+<body>
    <header class="sticky">
 
       <div class="row">
 
          <div class="logo">
-            <a href="index.html">Fundamentos de Programación</a>
+            <a href="index.html">Lhander</a>
          </div>
-
         <nav id="main-nav-wrap">
-          <ul class="main-navigation">
-            <li class="current" onclick="inicio();"><a class="smoothscroll"  href="#intro"  title="">Inicio</a></li>
-                 <li class="with-sep nove"><a href="#" title="">SANDBOX</a></li>
-                 <li class="nove" id="soloprof"><a class="smoothscroll"  href="#" title="">Proyectos</a></li>
-                 <li class="with-sep nove"><a href="#" title="">Perfil</a></li>       
-            <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="index.html" title="">Cerrar Sesión</a></div></li>
-                 
+           <ul class="main-navigation">
+             <li class="current" onclick="inicio();"><a class="smoothscroll" id="inicio" href="#"   title="">Inicio</a></li>
+                  <li class="with-sep nove"><a href="#" title="">SANDBOX</a></li>
+                  <li class="nove" id="soloprof"><a class="smoothscroll"  href="#" title="">Proyectos</a></li>
+                  <li class="with-sep nove"><a href="#" title="">Perfil</a></li>       
+             <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="index.html" title="">Cerrar Sesión</a></div></li>
 
-          </ul>
-        </nav>
+           </ul>
+         </nav>
 
          <a class="menu-toggle" href="#"><span>Menu</span></a>
          
       </div>      
       
-   </header> <!-- /header -->
-   <section id="process">
+   </header> 
 
-
-      <div class="row">
-
-         <div class="col-twelve perfil">
-      
-
-         </div>
-         
-      </div> <!--row -->   
-      
-   </section>
+   <section id="process" style="padding-top: 5%; "> 
+      <div class="content"></div>
+   </section> <!-- /process-->  
+   <div id="mod"></div>
    <footer>
 
     <div class="footer-main">
@@ -167,7 +157,11 @@ pública o distribución sin autorización previa del titular de los derechos</a
 
       </div>
 
-   </footer>   
+   </footer> 
+
+      <!-- Java Script
+   ================================================== --> 
+
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    <script src="js/jquery-1.11.3.min.js"></script>
@@ -176,90 +170,15 @@ pública o distribución sin autorización previa del titular de los derechos</a
       src="https://code.jquery.com/jquery-3.1.1.js"
       integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
       crossorigin="anonymous"></script>
-   <script src="js/plugins.js"></script> 
+   <script src="js/plugins.js"></script>
    <script src="js/proyectos.js"></script>
-   <script type="text/javascript" src="js/perfil.js"></script>
+   <script src="floaty-master/floaty.js"></script>
+   <script src="js/proyectosIniciador.js"></script>
+   <script src="js/proyectos2.js"></script>
+   <script src="js/sandBoxE.js"></script>
+
+
+
+
 </body>
 </html>
-
-        <!--
-
-            <div align="center">
-               <img src="images/profile-pictures/rafael bonilla.jpg" class="img-responsive img-circle">
-            </div>
-               
-            <div >
-               <h2 >
-               Rafael Bonilla       
-               </h2>
-            </div>
-
-            <div>
-
-               <table>
-                 <tbody>
-                   <tr>
-                     <td class="title">Correo Electrónico:</td>
-                     <td><a href="mailto:info@support.com">info@support.com</a></td>                 
-                   </tr>
-                   <tr>
-                     <td class="title">Fecha de Nacimiento</td>
-                     <td>01/24/1988</td>           
-                   </tr>
-                   <tr>
-                     <td class="title">Ejercicios propuestos</td>
-                     <td>50</td>          
-                   </tr>
-                   <tr>
-                     <td class="title">Nivel</td>
-                     <td>42</td>
-                  </tr>
-                 </tbody>
-               </table>
-
-            </div>  
-            -->  
-
-                  <!--
-         <div class="panel panel-default perfil ">
-
-            
-               <div class="panel-heading">
-                  <h3 class="panel-title"> Rafael Ignacio Bonilla Armijos </h3>
-               </div>
-               <div class="panel-body">
-                  <div class="row ">
-                     <div class="col-xs-12 col-sm-12 col-md-3 imagenPerfil" align="center">
-                        <img src="images/profile-pictures/rafael bonilla.jpg" class="img-responsive img-circle">
-                        
-                     </div>
-                     <div class=" col-md-9 col-lg-9 "> 
-                           <table class="table table-user-information">
-                             <tbody>
-
-                               <tr>
-                                 <td class="title">Correo Electrónico:</td>
-                                 <td><a href="mailto:info@support.com">info@support.com</a></td>
-                               </tr>
-                               <tr>
-                                 <td class="title">Fecha de Nacimiento</td>
-                                 <td>01/24/1988</td>
-                               </tr>
-
-                               <tr>
-                                 <td class="title">Ejercicios propuestos</td>
-                                 <td>50</td>
-                               </tr>
-                               <tr>
-                                 <td class="title">Nivel</td>
-                                 <td>42</td>
-                               </tr>
-                              
-                             </tbody>
-                           </table>
-                     </div>
-                  </div>
-               </div>
-               
-         </div>
-         -->

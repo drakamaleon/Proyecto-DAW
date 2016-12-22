@@ -1,0 +1,583 @@
+ <!-- week to week Section
+   ================================================== -->
+ <section id="features">
+
+    <div class="row section-intro">
+      <div class="col-twelve with-bottom-line">
+
+        <h5>week to week</h5>
+        <h1>week to developers of course Fundamentals programing</h1>
+
+        <p class="lead">Aqui mostraremos el programa de estudio del curso de fundamentos de programacion</p>
+
+      </div>
+    </div>
+
+    <section>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+ <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingOne">
+     <h4 class="panel-title">
+       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1 Introducción
+       </a>
+     </h4>
+   </div>
+   <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+         <div class="panel-body">
+                              <a href="#" data-toggle="modal" data-target="#pdf-modal">Introduccion</a>
+                                         <div class="modal fade" id="pdf-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                               <div class="modal-dialog">
+                                               <div class="modal-content">
+                                                         <!-- contenido del Pdf-->
+                                                               <embed src="data/diapositivas/01 - Introduccion.pdf" width="700px" height="1000px" />
+
+                                                 </div>
+                                           </div>
+                                       </div>
+         </div>
+         <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#video-modal">Aprende a Programar</a>
+                                    <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                          <div class="modal-content">
+                                                    <!-- contenido del Pdf--> 
+                                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/UF6xeb6Rh0Q" frameborder="0" allowfullscreen></iframe>
+                                                          
+                                            </div>
+                                      </div>
+                                  </div>
+         </div>
+          <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#pdf1-modal">Python3-TextoGuía</a>
+                                          <div class="modal fade" id="pdf1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                          <!-- contenido del Pdf--> 
+                                                                <embed src="data/libros/1_TutorialPython3-TextoGuía.pdf" width="700px" height="1000px" />
+                                                                
+                                                  </div>
+                                            </div>
+                                        </div>
+         </div>
+
+   </div>
+ </div>
+ <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingTwo">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2 Variables y tipos de Datos
+       </a>
+     </h4>
+   </div>
+   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+     <div class="panel-body">
+                                        <a href="#" data-toggle="modal" data-target="#pdf2-modal">Tipo de Datos y Variables</a>
+                                      <div class="modal fade" id="pdf2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/02 - Datos_Variables_Operadores.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+     <div class="panel-body">
+                                    <a href="#" data-toggle="modal" data-target="#pdf3-modal">Taller y Tipo de Datos y Variables</a>
+                                      <div class="modal fade" id="pdf3-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                          <embed src="data/talleres - ejercicios - deberes/Ejercicios - Variables y tipos de datos y Estructuras de Control.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+     <div class="panel-body">
+                          
+                                    <a href="#" data-toggle="modal" data-target="#video1-modal">Aprende a Programar</a>
+                                    <div class="modal fade" id="video1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                          <div class="modal-content">
+                                                    <!-- contenido del Pdf--> 
+                                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/UF6xeb6Rh0Q" frameborder="0" allowfullscreen></iframe>
+                                                          
+                                            </div>
+                                      </div>
+                                  </div>
+     </div>
+   </div>
+ </div>
+ <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingThree">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+       3  Manejo de Texto
+       </a>
+     </h4>
+   </div>
+   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+     <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#pdf4-modal">Manejo de Texto</a>
+                                      <div class="modal fade" id="pdf4-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/03 - Manejo de texto.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+      <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#video3-modal">Manejo de Texto(Video)</a>
+                          <div class="modal fade" id="video3-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                          <!-- contenido del Video--> 
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/y6SJzay9SYg" frameborder="0" allowfullscreen></iframe>
+                                                
+                                  </div>
+                            </div>
+                        </div>
+     </div>
+
+
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingFour">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        4 Condicionales y talleres
+       </a>
+     </h4>
+   </div>
+   <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+     <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#pdf5-modal">Condiciones</a>
+                                      <div class="modal fade" id="pdf5-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/04 - Condicionales.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+      <div class="panel-body">
+                         <a href="#" data-toggle="modal" data-target="#video4-modal">Condiciones(Video)</a>
+                          <div class="modal fade" id="video4-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                          <!-- contenido del Video--> 
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/hLqKvB7tGWk" frameborder="0" allowfullscreen></iframe>
+                                                
+                                  </div>
+                            </div>
+                        </div>
+     </div>
+   <div class="panel-body">
+                         <a href="#" data-toggle="modal" data-target="#pdf6-modal">Taller Recetas</a>
+                                      <div class="modal fade" id="pdf6-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/talleres - ejercicios - deberes/Algoritmos Receta.pdf" width="700px" height="1000px" />
+                                                        
+                                              </div>
+                                        </div>
+                                    </div>
+ </div>
+     
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingFive">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        5 Arreglos N-Dimensionales
+       </a>
+     </h4>
+   </div>
+   <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+     <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#pdf7-modal">Arreglos n-Dimensionales</a>
+                                      <div class="modal fade" id="pdf7-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/07 - Arreglos n-Dimensionales.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+      <div class="panel-body">
+                           <a href="#" data-toggle="modal" data-target="#video5-modal">Arreglos(Video)</a>
+                          <div class="modal fade" id="video5-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                          <!-- contenido del Video--> 
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/y6SJzay9SYg" frameborder="0" allowfullscreen></iframe>
+                                                
+                                  </div>
+                            </div>
+                        </div>
+     </div>
+
+     
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingSix">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+       6 Listas
+       </a>
+     </h4>
+   </div>
+   <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+    <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#pdf8-modal">Listas</a>
+                                      <div class="modal fade" id="pdf8-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/06 - Listas.pdf" width="700px" height="1000px" />
+                                                  
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+      <div class="panel-body">
+                          <a href="#" data-toggle="modal" data-target="#video6-modal">Listas(Video)</a>
+                          <div class="modal fade" id="video6-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                          <!-- contenido del Video--> 
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/vdqt8OZ-wYQ" frameborder="0" allowfullscreen></iframe>
+                                                
+                                  </div>
+                            </div>
+                        </div>
+     </div>
+
+     
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingSeven">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+         7 Lazos
+       </a>
+     </h4>
+   </div>
+   <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+     <div class="panel-body">
+                                    <a href="#" data-toggle="modal" data-target="#pdf9-modal">Lazos</a>
+                                      <div class="modal fade" id="pdf9-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/05 - Lazos.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+      <div class="panel-body">
+                          <a href="#" data-toggle="modal" data-target="#video7-modal">Lazos(Video)</a>
+                          <div class="modal fade" id="video7-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                          <!-- contenido del Video--> 
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/A0jxif8WIY4" frameborder="0" allowfullscreen></iframe>
+                                                
+                                  </div>
+                            </div>
+                        </div>
+     </div>
+
+     
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingEight">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+         8 Funciones 
+       </a>
+     </h4>
+   </div>
+   <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+    <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#pdf9-modal">Funciones</a>
+                                      <div class="modal fade" id="pdf9-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/08 - Funciones.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+      <div class="panel-body">
+                          <a href="#" data-toggle="modal" data-target="#video8-modal">Funciones(Video)</a>
+                          <div class="modal fade" id="video8-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                          <!-- contenido del Video--> 
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/_C7Uj7O5o_Q" frameborder="0" allowfullscreen></iframe>
+                                                
+                                  </div>
+                            </div>
+                        </div>
+     </div>
+
+     
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingNine">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+         9 Tuplas
+       </a>
+     </h4>
+   </div>
+   <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+    <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#pdf10-modal">Tuplas</a>
+                                            <div class="modal fade" id="pdf10-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                            <!-- contenido del Pdf--> 
+                                                                  <embed src="data/diapositivas/09 - Tuplas_diccionarios_sets.pdf" width="700px" height="1000px" />
+                                                                  
+                                                    </div>
+                                              </div>
+                                          </div>
+     </div>
+      <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#video9-modal">Tuplas(Video)</a>
+                                <div class="modal fade" id="video9-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                      <div class="modal-content">
+                                                <!-- contenido del Video--> 
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ep1SCWR6wD0" frameborder="0" allowfullscreen></iframe>
+                                                      
+                                        </div>
+                                  </div>
+                              </div>
+     </div>
+
+     
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingTen">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+         10 Talleres
+       </a>
+     </h4>
+   </div>
+   <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+     <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#pdf11-modal">Talleres</a>
+                                      <div class="modal fade" id="pdf11-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/diapositivas/03 - Manejo de texto.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+     <div class="panel-body">
+                                        <a href="#" data-toggle="modal" data-target="#video10-modal">Talleres(Video)</a>
+                                <div class="modal fade" id="video10-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                      <div class="modal-content">
+                                                <!-- contenido del Video--> 
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y6SJzay9SYg" frameborder="0" allowfullscreen></iframe>
+                                                      
+                                        </div>
+                                  </div>
+                              </div>
+     </div>
+
+     
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingEleven">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+         11 Avance Proyecto
+       </a>
+     </h4>
+   </div>
+   <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+    <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#pdf12-modal">Avance de Proyectos</a>
+                                      <div class="modal fade" id="pdf12-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/proyectos/Avance0.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+          
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingTwelve">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+         12 2do avance Proyecto
+       </a>
+     </h4>
+   </div>
+   <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+     <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#pdf13-modal">Avance de Proyectos 02</a>
+                                              <div class="modal fade" id="pdf13-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                              <!-- contenido del Pdf--> 
+                                                                    <embed src="data/proyectos/Avance0.pdf" width="700px" height="1000px" />
+                                                                    
+                                                      </div>
+                                                </div>
+                                            </div>
+     </div>
+          
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingThreeteen">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThreeteen" aria-expanded="false" aria-controls="collapseThreeteen">
+         13 3er avance Proyecto</a>
+     </h4>
+   </div>
+   <div id="collapseThreeteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeteen">
+    <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#pdf14-modal">Avance de Proyectos 02</a>
+                                              <div class="modal fade" id="pdf14-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                              <!-- contenido del Pdf--> 
+                                                                    <embed src="data/proyectos/Avance2.pdf" width="700px" height="1000px" />
+                                                                    
+                                                      </div>
+                                                </div>
+                                            </div>
+     </div>
+          
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingFourteen">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+         14 Proyecto Final
+       </a>
+     </h4>
+   </div>
+   <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+     <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#pdf15-modal">Avance de Proyectos 03</a>
+                                              <div class="modal fade" id="pdf15-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                              <!-- contenido del Pdf--> 
+                                                                    <embed src="data/proyectos/ProyectoFinal.pdf" width="700px" height="1000px" />
+                                                                    
+                                                      </div>
+                                                </div>
+                                            </div>
+     </div>
+          
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingFiveteen">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveteen" aria-expanded="false" aria-controls="collapseFiveteen">
+         15 Examenes
+       </a>
+     </h4>
+   </div>
+   <div id="collapseFiveteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveteen">
+     <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#pdf16-modal">Examen 1</a>
+                                      <div class="modal fade" id="pdf16-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                      <!-- contenido del Pdf--> 
+                                                            <embed src="data/examenes/Examen1E-1T-2016.pdf" width="700px" height="1000px" />
+                                                            
+                                              </div>
+                                        </div>
+                                    </div>
+     </div>
+          
+   </div>
+ </div>
+  <div class="panel panel-default">
+   <div class="panel-heading" role="tab" id="headingSixteen">
+     <h4 class="panel-title">
+       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+         16 ejercicios
+       </a>
+     </h4>
+   </div>
+   <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+    <div class="panel-body">
+                                  <a href="#" data-toggle="modal" data-target="#pdf17-modal"> Sustentación</a>
+                                              <div class="modal fade" id="pdf17-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                              <!-- contenido del Pdf--> 
+                                                                    <embed src="data/proyectos/sustentacion.pdf" width="700px" height="1000px" />
+                                                                    
+                                                      </div>
+                                                </div>
+                                            </div>
+     </div>
+      <div class="panel-body">
+                                   <a href="#" data-toggle="modal" data-target="#video12-modal">Ejercicios Basicos(Video)</a>
+                          <div class="modal fade" id="video12-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                          <!-- contenido del Video--> 
+                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/sTVScJ7hp88" frameborder="0" allowfullscreen></iframe>
+                                  </div>
+                            </div>
+                        </div>
+     </div>
+
+     
+   </div>
+ </div>
+</div>
+
+  </section>
+
+  </section> <!-- /features -->

@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Lhander</title>
+	<title>Proyectos-Fundamentos de Programación</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -18,11 +18,11 @@
  	<!-- CSS
    ================================================== -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/base.css"> 
    <link rel="stylesheet" href="css/vendor.css"> 
    <link rel="stylesheet" href="css/proyectos.css"> 
-   <link rel="stylesheet" type="text/css" href="floaty-master/floaty.css">   
+   <link rel="stylesheet" type="text/css" href="floaty-master/floaty.css">
+	<link rel="stylesheet" href="css/main.css">
 
    <!-- script
    ================================================== -->
@@ -37,28 +37,28 @@
 <body>
    <header class="sticky">
 
-      <div class="row">
+    <div class="row">
 
-         <div class="logo">
-            <a href="index.html">Lhander</a>
-         </div>
+      <div class="logo">
+           <a href="index.html">Fundamentos de Programación</a>
+        </div>
 
-         <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-               <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-               <li><a class="smoothscroll"  href="#process" title="">Process</a></li>
-               <li><a class="smoothscroll"  href="#features" title="">Features</a></li>
-               <li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
-               <li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>             
-               <li class="highlight with-sep"><a href="#" title="">Sign Up</a></li>             
-            </ul>
-         </nav>
+      <nav id="main-nav-wrap">
+        <ul class="main-navigation">
+          <li class="current" onclick="inicio();"><a class="smoothscroll" id="inicio" href="#"   title="">Inicio</a></li>
+               <li class="with-sep nove"><a href="#" title="">SANDBOX</a></li>
+               <li class="nove" id="soloprof"><a class="smoothscroll"  href="#" title="">Proyectos</a></li>
+               <li class="with-sep nove"><a href="#" title="">Perfil</a></li>       
+          <li id="highlighted" class="highlight with-sep"><div class='video-link'><a id="iniciar" href="index.html" title="">Cerrar Sesión</a></div></li>
 
-         <a class="menu-toggle" href="#"><span>Menu</span></a>
-         
-      </div>      
+        </ul>
+      </nav>
+
+      <a class="menu-toggle" href="#"><span>Menu</span></a>
       
-   </header> 
+    </div>    
+    
+   </header> <!-- /header -->
 
    <section id="process"> 
       <div>
@@ -68,216 +68,12 @@
 
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-<!--
-                    <div class="panel panel-default ">
-                      <div class="panel-heading cabeceraAcordeon" role="tab" id="heading1">
-                        <h4 class="panel-title ">
-                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                            Titulo 1
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
-                        <div class="panel-body">
-                           <div class="row">
-                              <div class="col-xs-12 col-sm-12 col-md-12">  
-                                 <div class="descripcion">
-                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
-                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="fecha">
-                                    <p class="acordeon-title"> <b> Fecha</b></p> 
-                                    <p class="acordeon-content">
-                                       <form>
-                                          <input type="date" name="nacimiento" />
-                                       </form>
-                                     </p>
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="etiquetas">
-                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
-                                    <p class="acordeon-content"> #hola #comoAndas </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="archivos">
-                                    <p class="acordeon-title"> <b> Archivos</b></p> 
-                                    <a href="#">proyectoA</a> 
-                                    
-                                 </div>
-
-                                 
-                              </div>
-                           </div>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading " role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                             Titulo 2
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-
-                           <div class="row">
-                              <div class="col-xs-12 col-sm-12 col-md-12">  
-                                 <div class="descripcion">
-                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
-                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="fecha">
-                                    <p class="acordeon-title"> <b> Fecha</b></p> 
-                                    <p class="acordeon-content">
-                                       <form>
-                                          <input type="date" name="nacimiento" />
-                                       </form>
-                                     </p>
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="etiquetas">
-                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
-                                    <p class="acordeon-content"> #hola #comoAndas </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="archivos">
-                                    <p class="acordeon-title"> <b> Archivos</b></p> 
-                                    <a href="#">proyectoA</a> 
-                                    
-                                 </div>
-
-                                 
-                              </div>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Titulo 3
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                           <div class="row">
-                              <div class="col-xs-12 col-sm-12 col-md-12">  
-                                 <div class="descripcion">
-                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
-                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="fecha">
-                                    <p class="acordeon-title"> <b> Fecha</b></p> 
-                                    <p class="acordeon-content">
-                                       <form>
-                                          <input type="date" name="nacimiento" />
-                                       </form>
-                                     </p>
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="etiquetas">
-                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
-                                    <p class="acordeon-content"> #hola #comoAndas </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="archivos">
-                                    <p class="acordeon-title"> <b> Archivos</b></p> 
-                                    <a href="#">proyectoA</a> 
-                                    
-                                 </div>
-
-                                 
-                              </div>
-                           </div>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingFour">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                           Titulo 4
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
-                        <div class="panel-body">
-                           <div class="row">
-                              <div class="col-xs-12 col-sm-12 col-md-12">  
-                                 <div class="descripcion">
-                                    <p class="acordeon-title"> <b> Descripcion</b></p> 
-                                    <p class="acordeon-content"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="fecha">
-                                    <p class="acordeon-title"> <b> Fecha</b></p> 
-                                    <p class="acordeon-content">
-                                       <form>
-                                          <input type="date" name="nacimiento" />
-                                       </form>
-                                     </p>
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="etiquetas">
-                                    <p class="acordeon-title"> <b> Etiquetas</b></p> 
-                                    <p class="acordeon-content"> #hola #comoAndas </p>
-
-                                    
-                                 </div>
-                                 <hr>
-                                 <div class="archivos">
-                                    <p class="acordeon-title"> <b> Archivos</b></p> 
-                                    <a href="#">proyectoA</a> 
-                                    
-                                 </div>                             
-                              </div>
-                           </div>
-
-                        </div>
-                      </div>
-                    </div>
--->
                   </div>
                 </div>
 
               </div>
            </div>
 
-           <div class="icono">
-            <form>
-               <button type="button" class="btn btn-default btn-lg " data-toggle="modal" data-target="#myModal">
-                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nuevo
-               </button>
-            </form>
-           </div>
-g
            <div class="floaty">
              <form>
                <button type="button" class="btn btn-floaty btn-lg btn-circle " data-toggle="modal" data-target="#myModal">
@@ -339,7 +135,7 @@ g
                            <button type="button" id="delImage" class="btn btn-modal btn-hover-red" data-dismiss="modal"  role="button">Eliminar</button>
                         </div>
                         <div class="btn-group" role="group">
-                           <button type="button" id="saveImage" class="btn btn-modal btn-hover-green" data-action="save"  onclick="lectorPanel();"  role="button">Guardar</button>
+                           <button type="button" id="saveImage" class="btn btn-modal btn-hover-green" data-action="save"  onclick="lectorPanel();"  role="button" data-dismiss="modal">Guardar</button>
                         </div>
                      </div>
                   </div>
@@ -350,26 +146,100 @@ g
       </div> 
    </section> <!-- /process-->  
    <footer>
+
+    <div class="footer-main">
+
+      <div class="row">  
+
+          <div class="col-four tab-full mob-full footer-info">            
+
+              <div class="footer-logo"></div>
+
+              <p>
+              Facultad de Ingeniería en Electricidad y Computación<br>
+               Escuela Superior Politécnica del Litoral<br>
+               Campus Gustavo Galindo - km. 30.5 vía perimetral<br>
+               Guayaquil-Ecuador
+              admweb@fiec.espol.edu.ec &nbsp; +593 42 269 800 / +593 42 269 803
+              </p>
+
+          </div> <!-- /footer-info -->
+
+          <div class="col-two tab-1-3 mob-1-2 site-links">
+
+            <h4>Enlaces de interés</h4>
+
+            <ul>
+              <li><a href="http://www.abet.espol.edu.ec/">Proyecto ABET ESPOL</a></li>
+            <li><a href="https://www.fiec.espol.edu.ec/es">Carreras de Pregrado</a></li>
+            <li><a href="https://www.fiec.espol.edu.ec/es/trabajos-y-pasantias">Bolsa de Trabajo</a></li>
+            <li><a href="https://www.fiec.espol.edu.ec/es/directorio-telefonico">Directorio Telefónico</a></li>
+          </ul>
+
+          </div> <!-- /site-links -->  
+
+          <div class="col-two tab-1-3 mob-1-2 social-links">
+
+            <h4>Social</h4>
+
+            <ul>
+              <li><a href="https://twitter.com/SECRETARIAFIEC">Twitter</a></li>
+            <li><a href="https://www.facebook.com/FIEC01">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCsUsWgqQDwoHxj-HpbF7gzQ">Youtube</a></li>
+          </ul>
+                      
+          </div> <!-- /social --> 
+
+          <div class="col-four tab-1-3 mob-full footer-subscribe">
+
+            <h4>Subscríbete</h4>
+
+            <p>Mantente al día. Subscribete a nuestro boletín de noticias.</p>
+
+            <div class="subscribe-form">
+          
+              <form id="mc-form" class="group" novalidate="true">
+
+              <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="tipea tu email &amp; presiona enter" required=""> 
+        
+              <input type="submit" name="subscribe" >
+        
+              <label for="mc-email" class="subscribe-message"></label>
+      
+            </form>
+
+            </div>            
+                      
+          </div> <!-- /subscribe -->         
+
+        </div> <!-- /row -->
+
+    </div> <!-- /footer-main -->
+
+
       <div class="footer-bottom">
 
-         <div class="row">
+        <div class="row">
 
-            <div class="col-twelve">
-               <div class="copyright">
-                  <span>© Copyright Lhander 2016.</span> 
-                  <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>                
-               </div>
+          <div class="col-twelve">
+            <div class="copyright">
+              <span>© Copyright Espol 2016.</span> 
+              <span>Design by <a href="http://www.styleshout.com/"> &copy; El contenido de esta obra es de propiedad intelectual de la ESPOL y FIEC.
+Todos los derechos reservados.  Prohibida su reproducción total, parcial, comunicación
+pública o distribución sin autorización previa del titular de los derechos</a></span>             
+             </div>
 
-               <div id="go-top" style="display: block;">
-                  <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
-               </div>         
-            </div>
+             <div id="go-top" style="display: block;">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+             </div>         
+          </div>
 
-         </div>     
+        </div> <!-- /footer-bottom -->      
 
       </div>
-   
-   </footer>
+
+   </footer>  
+
 
       <!-- Java Script
    ================================================== --> 

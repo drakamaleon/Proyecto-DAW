@@ -18,7 +18,6 @@ $(document).ready(function(){
 		default:
 			return
 	}
-
 });
 
 function identificador() {
@@ -35,50 +34,86 @@ function identificador() {
 		return "pub";
 	}
 	return;
+}function login(){
+ 	var url = "data/data.json"
+ 	var xhttp = new XMLHttpRequest();
+ 	xhttp.onreadystatechange = function(){
+ 		if (xhttp.readyState ==4 && xhttp.status == 200){
+ 			var json = JSON.parse(xhttp.responseText) ;
+ 
+ 			var correo = $("#ulogin").val();
+ 			var password = $("#clogin").val();
+ 
+ 			if ((correo=="")||(password=="")){
+ 				alert("No ha llenado los campos")
+ 			}else{
+ 				var contador = 0
+ 				for (i = 0; i<json.length ; i++){
+ 					console.log("estudiante")
+ 					contador= contador+1;
+ 					var correoJson = json[i].email
+ 					var passwordJson = json[i].password
+ 					var tipoJson = json[i].type
+ 
+ 					if ( (correoJson==correo) && (passwordJson!=password)){
+ 						alert("contraseña incorrecta!!")
+ 						break;
+ 					}else if((correoJson==correo) && (passwordJson==password)){
+ 						window.location= document.location.href +"?" +tipoJson + "=" + correoJson;
+ 						break;
+ 					}
+ 				}
+ 				if (contador>= json.length) {
+ 					alert("usuario no existente");
+ 				}
+ 				
+ 			}
+ 		}
+ 
+ 
+ 	}
+ 
+ 	xhttp.open("GET", url);
+ 	xhttp.send();
+ 
+ 
+ }
+
+
+function perfil(){
+	var location = document.location.href;
+	var data = location.split("?")
+	var param = data[1]
+	if (data.length > 2){
+		param = data[2]
+	}
+	
+	window.location = "perfil.html?" + param;
 }
 
-function login(){
-	var url = "data/data.json"
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function(){
-		if (xhttp.readyState ==4 && xhttp.status == 200){
-			var json = JSON.parse(xhttp.responseText) ;
-
-			var correo = $("#ulogin").val();
-			var password = $("#clogin").val();
-
-			if ((correo=="")||(password=="")){
-				alert("No ha llenado los campos")
-			}else{
-				var contador = 0
-				for (i = 0; i<json.length ; i++){
-					console.log("estudiante")
-					contador= contador+1;
-					var correoJson = json[i].email
-					var passwordJson = json[i].password
-					var tipoJson = json[i].type
-
-					if ( (correoJson==correo) && (passwordJson!=password)){
-						alert("contraseña incorrecta!!")
-						break;
-					}else if((correoJson==correo) && (passwordJson==password)){
-						window.location= "http://localhost/ProyectoDaw3/index.html" + "?" tipoJson + "=" + correoJson;
-						console.log("hola")
-						break;
-					}
-				}
-				if (contador>= json.length) {
-					alert("usuario no existente");
-				}
-				
-			}
-		}
-
-
+function proyectos(){
+	var location = document.location.href;
+	var data = location.split("?")
+	var param = data[1]
+	if (data.length > 2){
+		param = data[2]
 	}
+	window.location = "proyectos.html?" + param;
+}
 
-	xhttp.open("GET", url);
-	xhttp.send();
+function sandbox(){
+	var location = document.location.href;
+	var data = location.split("?")
+	var param = data[1]
+	if (data.length > 2){
+		param = data[2]
+	}
+	var temporal = param.split("=")
+	if (temporal[0]=="estudiante"){
+		window.location = "sandboxE.html?" + param;
+	}else{
+		window.location = "sandboxP.html?" + param;
+	}
 
 
 }
