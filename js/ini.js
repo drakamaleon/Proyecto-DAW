@@ -62,7 +62,7 @@ function login(){
 						alert("contraseña incorrecta!!")
 						break;
 					}else if((correoJson==correo) && (passwordJson==password)){
-						window.location= document.location.href + tipoJson + "=" + correoJson;
+						window.location= "http://localhost/ProyectoDaw3/index.html" + "?" tipoJson + "=" + correoJson;
 						console.log("hola")
 						break;
 					}
@@ -81,40 +81,4 @@ function login(){
 	xhttp.send();
 
 
-}
-
-function login2(){
-	
-
-
-	var json = JSON.parse(data2) ;
-
-	var correo = $("#ulogin").val();
-	var password = $("#clogin").val();
-
-	if ((correo=="")||(password=="")){
-		alert("No ha llenado los campos")
-	}else{
-		var contador = 0
-		for (i = 0; i<json.length ; i++){
-			console.log("estudiante")
-			contador= contador+1;
-			var correoJson = json[i].email
-			var passwordJson = json[i].password
-			var tipoJson = json[i].type
-
-			if ( (correoJson==correo) && (passwordJson!=password)){
-						alert("contraseña incorrecta!!")
-						break;
-			}else if((correoJson==correo) && (passwordJson==password)){
-						window.location= document.location.href + tipoJson + "=" + correoJson;
-						console.log("hola")
-						break;
-					}
-			}
-		if (contador>= json.length) {
-					alert("usuario no existente");
-		}
-				
-	}
 }
