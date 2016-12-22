@@ -85,4 +85,3 @@ function lectorPanel(){
 	xhttp.send();
 
 }
-

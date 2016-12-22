@@ -46,7 +46,7 @@ div.floaty {
   line-height: 1.33;
   border-radius: 50%;
 }
-
+/**
 div.icono{
 	position: fixed;
     top: 50%;
@@ -54,6 +54,17 @@ div.icono{
     width: 8%;
     height: 10%;
 }
+*/
+
+
+div.icono{
+	margin-left: 11%;
+	background-color: white;
+	color: black;
+}
+
+
+
 
 .btn-floaty{
 	color: white;
