@@ -11,17 +11,21 @@
 	<meta name="description" content="">  
 	<meta name="author" content="">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   
+<!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
    <!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<!-- CSS  
+ 	<!-- CSS
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">
-   <link rel="stylesheet" href="parteAlcivar/semana.css">     
+   <link rel="stylesheet" href="css/vendor.css">     
 
 
    <!-- script
@@ -69,19 +73,6 @@
    	
    </header> <!-- /header -->
 
-
-<div id="login-popup" class="popup-modal mfp-hide">
- 
-          
-          <div class="fluid-video-wrapper" id="log">
-                <form id="login" class="group" width="300" height="201">
-                   <p>Usuario:</p><input id="ulogin" type="text" placeholder="Ingrese su correo Espol completo" required/>
-                   <p>Contraseña:</p><input id="clogin" type="password" placeholder="Ingrese su contraseña" required/>
-                   <button onclick="login();"><input type="submit" value="Ingresar"></button>
-                </form>
-          </div>              
-         <a class="close-popup">Cerrar</a>         
-      </div> <!-- /video-popup -->
  <!-- features Section
    ================================================== -->
    <section id="features">
@@ -113,8 +104,6 @@
    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 
          <div class="panel-body">
-       
-                            <img src="images/Pdf-icon.png" width="20px" height="20px"/>
                               <a href="#" data-toggle="modal" data-target="#pdf-modal">Introduccion</a>
                                          <div class="modal fade" id="pdf-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                <div class="modal-dialog">
@@ -127,7 +116,6 @@
                                        </div>
          </div>
          <div class="panel-body">
-                                 <img src="images/youtube.png" width="20px" height="20px"/>
                                   <a href="#" data-toggle="modal" data-target="#video-modal">Aprende a Programar</a>
                                     <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                           <div class="modal-dialog">
@@ -140,7 +128,6 @@
                                   </div>
          </div>
           <div class="panel-body">
-                                  <img src="images/pdf.ico" width="20px" height="20px"/>
                                   <a href="#" data-toggle="modal" data-target="#pdf1-modal">Python3-TextoGuía</a>
                                           <div class="modal fade" id="pdf1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
@@ -165,7 +152,6 @@
    </div>
    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
      <div class="panel-body">
-                                        <img src="images/Pdf-icon.png" width="20px" height="20px"/>
                                         <a href="#" data-toggle="modal" data-target="#pdf2-modal">Tipo de Datos y Variables</a>
                                       <div class="modal fade" id="pdf2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -178,7 +164,6 @@
                                     </div>
      </div>
      <div class="panel-body">
-                                    <img src="images/pdf.ico" width="20px" height="20px"/>
                                     <a href="#" data-toggle="modal" data-target="#pdf3-modal">Taller y Tipo de Datos y Variables</a>
                                       <div class="modal fade" id="pdf3-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -191,7 +176,7 @@
                                     </div>
      </div>
      <div class="panel-body">
-                                    <img src="images/youtube.png" width="20px" height="20px"/>
+                          
                                     <a href="#" data-toggle="modal" data-target="#video1-modal">Aprende a Programar</a>
                                     <div class="modal fade" id="video1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                           <div class="modal-dialog">
@@ -215,7 +200,6 @@
    </div>
    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
      <div class="panel-body">
-                                    <img src="images/Pdf-icon.png" width="20px" height="20px"/>
                                    <a href="#" data-toggle="modal" data-target="#pdf4-modal">Manejo de Texto</a>
                                       <div class="modal fade" id="pdf4-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -228,9 +212,8 @@
                                     </div>
      </div>
       <div class="panel-body">
-                                <img src="images/youtube.png" width="20px" height="20px"/>
-                                 <a href="#" data-toggle="modal" data-target="#video3-modal">Manejo de Texto(Video)</a>
-                                <div class="modal fade" id="video3-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                   <a href="#" data-toggle="modal" data-target="#video3-modal">Manejo de Texto(Video)</a>
+                          <div class="modal fade" id="video3-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                 <div class="modal-content">
                                           <!-- contenido del Video--> 
@@ -254,7 +237,6 @@
    </div>
    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
      <div class="panel-body">
-                                  <img src="images/pdf.ico" width="20px" height="20px"/>
                                    <a href="#" data-toggle="modal" data-target="#pdf5-modal">Condiciones</a>
                                       <div class="modal fade" id="pdf5-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -267,11 +249,10 @@
                                     </div>
      </div>
       <div class="panel-body">
-                                 <img src="images/youtube.png" width="20px" height="20px"/>
-                                 <a href="#" data-toggle="modal" data-target="#video4-modal">Condiciones(Video)</a>
-                                  <div class="modal fade" id="video4-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                         <div class="modal-content">
+                         <a href="#" data-toggle="modal" data-target="#video4-modal">Condiciones(Video)</a>
+                          <div class="modal fade" id="video4-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
                                           <!-- contenido del Video--> 
                                               <iframe width="560" height="315" src="https://www.youtube.com/embed/hLqKvB7tGWk" frameborder="0" allowfullscreen></iframe>
                                                 
@@ -280,8 +261,7 @@
                         </div>
      </div>
    <div class="panel-body">
-                                      <img src="images/pdf.ico" width="20px" height="20px"/>
-                                      <a href="#" data-toggle="modal" data-target="#pdf6-modal">Taller Recetas</a>
+                         <a href="#" data-toggle="modal" data-target="#pdf6-modal">Taller Recetas</a>
                                       <div class="modal fade" id="pdf6-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                             <div class="modal-content">
@@ -305,7 +285,6 @@
    </div>
    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
      <div class="panel-body">
-                                  <img src="images/pdf.ico" width="20px" height="20px"/>
                                   <a href="#" data-toggle="modal" data-target="#pdf7-modal">Arreglos n-Dimensionales</a>
                                       <div class="modal fade" id="pdf7-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -318,7 +297,6 @@
                                     </div>
      </div>
       <div class="panel-body">
-                            <img src="images/youtube.png" width="20px" height="20px"/>
                            <a href="#" data-toggle="modal" data-target="#video5-modal">Arreglos(Video)</a>
                           <div class="modal fade" id="video5-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -344,7 +322,6 @@
    </div>
    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
     <div class="panel-body">
-                                   <img src="images/pdf.ico" width="20px" height="20px"/>
                                    <a href="#" data-toggle="modal" data-target="#pdf8-modal">Listas</a>
                                       <div class="modal fade" id="pdf8-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -357,9 +334,8 @@
                                     </div>
      </div>
       <div class="panel-body">
-                               <img src="images/youtube.png" width="20px" height="20px"/>
-                               <a href="#" data-toggle="modal" data-target="#video6-modal">Listas(Video)</a>
-                               <div class="modal fade" id="video6-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <a href="#" data-toggle="modal" data-target="#video6-modal">Listas(Video)</a>
+                          <div class="modal fade" id="video6-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                 <div class="modal-content">
                                           <!-- contenido del Video--> 
@@ -383,7 +359,6 @@
    </div>
    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
      <div class="panel-body">
-                                    <img src="images/pdf.ico" width="20px" height="20px"/>
                                     <a href="#" data-toggle="modal" data-target="#pdf9-modal">Lazos</a>
                                       <div class="modal fade" id="pdf9-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -396,7 +371,6 @@
                                     </div>
      </div>
       <div class="panel-body">
-                          <img src="images/youtube.png" width="20px" height="20px"/>
                           <a href="#" data-toggle="modal" data-target="#video7-modal">Lazos(Video)</a>
                           <div class="modal fade" id="video7-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -422,9 +396,8 @@
    </div>
    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
     <div class="panel-body">
-                                  <img src="images/pdf.ico" width="20px" height="20px"/>
-                                  <a href="#" data-toggle="modal" data-target="#pdf90-modal">Funciones</a>
-                                      <div class="modal fade" id="pdf90-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                  <a href="#" data-toggle="modal" data-target="#pdf9-modal">Funciones</a>
+                                      <div class="modal fade" id="pdf9-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                             <div class="modal-content">
                                                       <!-- contenido del Pdf--> 
@@ -435,7 +408,6 @@
                                     </div>
      </div>
       <div class="panel-body">
-                          <img src="images/youtube.png" width="20px" height="20px"/>
                           <a href="#" data-toggle="modal" data-target="#video8-modal">Funciones(Video)</a>
                           <div class="modal fade" id="video8-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -461,8 +433,7 @@
    </div>
    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
     <div class="panel-body">
-                                            <img src="images/pdf.ico" width="20px" height="20px"/>
-                                            <a href="#" data-toggle="modal" data-target="#pdf10-modal">Tuplas</a>
+                                   <a href="#" data-toggle="modal" data-target="#pdf10-modal">Tuplas</a>
                                             <div class="modal fade" id="pdf10-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                   <div class="modal-dialog">
                                                   <div class="modal-content">
@@ -474,7 +445,6 @@
                                           </div>
      </div>
       <div class="panel-body">
-                                  <img src="images/youtube.png" width="20px" height="20px"/>
                                   <a href="#" data-toggle="modal" data-target="#video9-modal">Tuplas(Video)</a>
                                 <div class="modal fade" id="video9-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                       <div class="modal-dialog">
@@ -500,7 +470,6 @@
    </div>
    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
      <div class="panel-body">
-                                  <img src="images/pdf.ico" width="20px" height="20px"/>
                                   <a href="#" data-toggle="modal" data-target="#pdf11-modal">Talleres</a>
                                       <div class="modal fade" id="pdf11-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -513,9 +482,8 @@
                                     </div>
      </div>
      <div class="panel-body">
-                                      <img src="images/youtube.png" width="20px" height="20px"/>
-                                      <a href="#" data-toggle="modal" data-target="#video10-modal">Talleres(Video)</a>
-                                      <div class="modal fade" id="video10-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <a href="#" data-toggle="modal" data-target="#video10-modal">Talleres(Video)</a>
+                                <div class="modal fade" id="video10-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                       <div class="modal-dialog">
                                       <div class="modal-content">
                                                 <!-- contenido del Video--> 
@@ -539,7 +507,6 @@
    </div>
    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
     <div class="panel-body">
-                                  <img src="images/pdf.ico" width="20px" height="20px"/>
                                   <a href="#" data-toggle="modal" data-target="#pdf12-modal">Avance de Proyectos</a>
                                       <div class="modal fade" id="pdf12-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -564,8 +531,7 @@
    </div>
    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
      <div class="panel-body">
-                                              <img src="images/pdf.ico" width="20px" height="20px"/>
-                                              <a href="#" data-toggle="modal" data-target="#pdf13-modal">Avance de Proyectos 02</a>
+                                   <a href="#" data-toggle="modal" data-target="#pdf13-modal">Avance de Proyectos 02</a>
                                               <div class="modal fade" id="pdf13-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                     <div class="modal-content">
@@ -588,8 +554,7 @@
    </div>
    <div id="collapseThreeteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeteen">
     <div class="panel-body">
-                                              <img src="images/pdf.ico" width="20px" height="20px"/>
-                                              <a href="#" data-toggle="modal" data-target="#pdf14-modal">Avance de Proyectos 02</a>
+                                   <a href="#" data-toggle="modal" data-target="#pdf14-modal">Avance de Proyectos 02</a>
                                               <div class="modal fade" id="pdf14-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                     <div class="modal-content">
@@ -613,8 +578,7 @@
    </div>
    <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
      <div class="panel-body">
-                                              <img src="images/pdf.ico" width="20px" height="20px"/>
-                                              <a href="#" data-toggle="modal" data-target="#pdf15-modal">Avance de Proyectos 03</a>
+                                  <a href="#" data-toggle="modal" data-target="#pdf15-modal">Avance de Proyectos 03</a>
                                               <div class="modal fade" id="pdf15-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                     <div class="modal-content">
@@ -638,7 +602,6 @@
    </div>
    <div id="collapseFiveteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveteen">
      <div class="panel-body">
-                                   <img src="images/pdf.ico" width="20px" height="20px"/>
                                    <a href="#" data-toggle="modal" data-target="#pdf16-modal">Examen 1</a>
                                       <div class="modal fade" id="pdf16-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -663,7 +626,6 @@
    </div>
    <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
     <div class="panel-body">
-                                  <img src="images/pdf.ico" width="20px" height="20px"/>
                                   <a href="#" data-toggle="modal" data-target="#pdf17-modal"> Sustentación</a>
                                               <div class="modal fade" id="pdf17-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
@@ -676,7 +638,6 @@
                                             </div>
      </div>
       <div class="panel-body">
-                                   <img src="images/youtube.png" width="20px" height="20px"/>
                                    <a href="#" data-toggle="modal" data-target="#video12-modal">Ejercicios Basicos(Video)</a>
                           <div class="modal fade" id="video12-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -693,7 +654,20 @@
  </div>
 </div>
 
-  
+  <div id="login-popup" class="popup-modal mfp-hide">
+ 
+          
+          <div class="fluid-video-wrapper" id="log">
+                <form id="login" class="group" width="300" height="201">
+                   <p>Usuario:</p><input id="ulogin" type="text" placeholder="Ingrese su correo Espol completo" >
+                   <p>Contraseña:</p><input id="clogin" type="password" placeholder="Ingrese su contraseña" >
+                   <button onclick="login();"><input type="submit" value="Ingresar"></button>
+                </form>
+          </div>              
+
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup -->        
 
   </section> <!-- /features -->
 
@@ -805,6 +779,7 @@ pública o distribución sin autorización previa del titular de los derechos</a
    <script src="js/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script src="js/cargar.js"></script>
    <script type="text/javascript" src="js/ini.js"></script>
    <script src="js/cargar.js"></script>
    <script type="text/javascript" src="js/ayudantes.js"></script>

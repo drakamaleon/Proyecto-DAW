@@ -50,6 +50,7 @@ function iniciador( email){
 							'</table>'+
 						'</div>'
 					)
+					break;
 				}
 
 			}

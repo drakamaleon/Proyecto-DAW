@@ -26,10 +26,9 @@
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">     
-   <link rel="stylesheet" href="css/equipo.css">     
-    
- 
-       <!-- script
+
+
+   <!-- script
    ================================================== -->
   <script src="js/modernizr.js"></script>
       <script src="js/equipo.js"></script>
@@ -74,19 +73,6 @@
     
    </header> <!-- /header -->
 
-<div id="login-popup" class="popup-modal mfp-hide">
- 
-          
-          <div class="fluid-video-wrapper" id="log">
-                <form id="login" class="group" width="300" height="201">
-                   <p>Usuario:</p><input id="ulogin" type="text" placeholder="Ingrese su correo Espol completo" required/>
-                   <p>Contraseña:</p><input id="clogin" type="password" placeholder="Ingrese su contraseña" required/>
-                   <button onclick="login();"><input type="submit" value="Ingresar"></button>
-                </form>
-          </div>              
-         <a class="close-popup">Cerrar</a>         
-      </div> <!-- /video-popup -->
-
 <!-- faq
    ================================================== -->
    <section id="faq">
@@ -114,7 +100,20 @@
                  
         </div>
 
+<div id="login-popup" class="popup-modal mfp-hide">
+ 
+          
+          <div class="fluid-video-wrapper" id="log">
+                <form id="login" class="group" width="300" height="201">
+                   <p>Usuario:</p><input id="ulogin" type="text" placeholder="Ingrese su correo Espol completo" >
+                   <p>Contraseña:</p><input id="clogin" type="password" placeholder="Ingrese su contraseña" >
+                   <button onclick="login();"><input type="submit" value="Ingresar"></button>
+                </form>
+          </div>              
 
+         <a class="close-popup">Cerrar</a>         
+
+      </div> <!-- /video-popup -->        
 
    </section> <!-- /faq -->
 
@@ -226,6 +225,7 @@ pública o distribución sin autorización previa del titular de los derechos</a
    <script src="js/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script src="js/cargar.js"></script>
    <script type="text/javascript" src="js/ini.js"></script>
    <script src="js/cargar.js"></script>
    <script type="text/javascript" src="js/ayudantes.js"></script>
