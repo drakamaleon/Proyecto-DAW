@@ -1,4 +1,16 @@
 $(document).ready(function(){
+	$("#clogin").keypress(function(event) {
+		if(event.keyCode==13){
+
+			login();
+		}
+	});
+	$("#ulogin").keypress(function(event) {
+		if(event.keyCode==13){
+
+			login();
+		}
+	});
 	var url=identificador();
 	switch(url) {
 		case 'est':{
@@ -48,7 +60,10 @@ function login(){
  			var password = $("#clogin").val();
  
  			if ((correo=="")||(password=="")){
- 				alert("No ha llenado los campos")
+ 				$(".oculto").css({
+ 							display: 'block',
+ 							color: 'red'
+ 						});
  			}else{
  				var contador = 0
  				for (i = 0; i<json.length ; i++){
@@ -59,7 +74,10 @@ function login(){
  					var tipoJson = json[i].type
  
  					if ( (correoJson==correo) && (passwordJson!=password)){
- 						alert("contraseña incorrecta!!")
+ 						$(".oculto").css({
+ 							display: 'block',
+ 							color: 'red'
+ 						});
  						break;
  					}else if((correoJson==correo) && (passwordJson==password)){
  						window.location= document.location.href +"?" +tipoJson + "=" + correoJson;
@@ -67,7 +85,11 @@ function login(){
  					}
  				}
  				if (contador>= json.length) {
- 					alert("usuario no existente");
+ 					
+ 					$(".oculto").css({
+ 							display: 'block',
+ 							color: 'red'
+ 						});
  				}
  				
  			}
